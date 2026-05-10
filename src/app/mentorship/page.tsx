@@ -1,0 +1,38 @@
+import { CTASection } from "@/components/cta-section";
+import { PageHeader } from "@/components/page-header";
+import { SiteFooter } from "@/components/site-footer";
+
+export const metadata = {
+  title: "Mentorship",
+  description:
+    "Mentorship and guidance focus areas for engineers working on AI, platform systems, interviews, and career direction.",
+};
+
+export default function MentorshipPage() {
+  const focusAreas = [
+    "AI productivity workflows for engineering teams",
+    "Production GenAI and RAG system design",
+    "Backend/platform engineering career direction",
+    "Resume, portfolio, and interview positioning",
+    "Moving from execution to influence without formal authority",
+  ];
+
+  return (
+    <>
+      <PageHeader
+        eyebrow="Mentorship"
+        title="Practical guidance for engineers building stronger judgment."
+        description="The mentorship layer can later connect to Topmate while preserving privacy and keeping your main contact details off the open web."
+      />
+      <main className="section-shell grid gap-4 pb-20 md:grid-cols-2">
+        {focusAreas.map((area) => (
+          <article className="surface rounded-lg p-6" key={area}>
+            <h2 className="text-xl font-black">{area}</h2>
+          </article>
+        ))}
+      </main>
+      <CTASection />
+      <SiteFooter />
+    </>
+  );
+}
