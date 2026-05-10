@@ -13,6 +13,8 @@ export function ButtonLink({
   href,
   variant = "secondary",
 }: ButtonLinkProps) {
+  const isExternal = href.startsWith("http");
+
   return (
     <Link
       className={cn(
@@ -22,6 +24,8 @@ export function ButtonLink({
           : "border-[var(--line)] bg-white/7 text-white hover:bg-white/11"
       )}
       href={href}
+      rel={isExternal ? "noreferrer" : undefined}
+      target={isExternal ? "_blank" : undefined}
     >
       {children}
     </Link>

@@ -21,6 +21,21 @@ export default function ProofPage() {
         description="Built to support jobs, speaking, reviewing, judging, mentoring, and long-term evidence organization without making the public site feel like a legal packet."
       />
       <main className="section-shell space-y-12 pb-20">
+        <section className="surface rounded-lg p-7 md:p-9">
+          <p className="mono mb-4 text-xs font-black uppercase text-[var(--accent)]">
+            Evidence Architecture
+          </p>
+          <h2 className="text-3xl font-black">
+            Public proof, independent proof, dated proof.
+          </h2>
+          <p className="mt-5 max-w-4xl leading-8 text-[var(--muted)]">
+            This ledger is designed to keep external signals organized as they
+            accumulate: reviewing, judging, teaching, mentoring, writing, public
+            projects, and other independent recognition. The goal is simple:
+            make the record easy to verify without overexplaining it.
+          </p>
+        </section>
+
         {categories.map((category) => (
           <section key={category}>
             <h2 className="mb-5 text-3xl font-black">{category}</h2>

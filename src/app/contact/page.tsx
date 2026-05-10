@@ -34,7 +34,7 @@ export default function ContactPage() {
           title="Mentorship"
           description="Career guidance, AI productivity, system design, portfolio, and interview positioning."
           href={profile.links.topmate}
-          label="Topmate Placeholder"
+          label="Topmate coming soon"
         />
       </main>
       <SiteFooter />
@@ -60,9 +60,15 @@ function ContactOption({
         <p className="mt-4 leading-8 text-[var(--muted)]">{description}</p>
       </div>
       <div className="mt-8">
-        <ButtonLink href={href} variant="primary">
-          {label}
-        </ButtonLink>
+        {href ? (
+          <ButtonLink href={href} variant="primary">
+            {label}
+          </ButtonLink>
+        ) : (
+          <span className="inline-flex min-h-11 items-center rounded-md border border-[var(--line)] bg-white/6 px-5 text-sm font-black text-[var(--muted)]">
+            {label}
+          </span>
+        )}
       </div>
     </article>
   );

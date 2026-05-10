@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
 import { caseStudies } from "@/data/case-studies";
+import { profile } from "@/data/profile";
 
-const baseUrl = "https://samvid.dev";
+const baseUrl = profile.siteUrl;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [

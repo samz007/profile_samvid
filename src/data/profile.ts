@@ -1,6 +1,7 @@
 export const profile = {
   name: "Samvid Zare",
   location: "Seattle, WA",
+  siteUrl: "https://portfolio-website-blue-xi-83.vercel.app",
   headline: "I build production AI systems for enterprise workflows.",
   subheadline:
     "AWS engineer focused on GenAI platforms, support automation, context systems, and large-scale modernization, with prior work across AWS, Target, and NYU.",
@@ -8,8 +9,8 @@ export const profile = {
     "Enterprise AI systems, platform engineering, and proof of judgment.",
   links: {
     github: "https://github.com/samz007",
-    linkedin: "#",
-    topmate: "#",
+    linkedin: "",
+    topmate: "",
   },
 };
 
