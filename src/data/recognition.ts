@@ -1,7 +1,7 @@
 export const recognitionItems = [
   {
     category: "Judging & Reviewing",
-    title: "Reviewer",
+    title: "Technical Reviewer",
     organization: "IEEE SoutheastCon 2026",
     date: "2026",
     signal:

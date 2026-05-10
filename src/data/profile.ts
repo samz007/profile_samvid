@@ -4,7 +4,7 @@ export const profile = {
   siteUrl: "https://portfolio-website-blue-xi-83.vercel.app",
   headline: "I build production AI systems for enterprise workflows.",
   subheadline:
-    "Software engineer focused on GenAI platforms, support automation, RAG systems, and large-scale backend modernization, with prior experience across pricing systems and computer science teaching.",
+    "I’m a software engineer focused on GenAI platforms, RAG systems, support automation, and large-scale backend modernization, with experience across AWS enterprise AI systems, Target pricing platforms, and computer science teaching at NYU Courant.",
   positioning:
     "AI systems, engineering judgment, mentorship, and recognition.",
   links: {
@@ -27,19 +27,23 @@ export const credibilitySignals = [
 
 export const metrics = [
   {
-    value: "6",
-    label: "technical manuscripts reviewed for IEEE SoutheastCon",
+    value: "AI",
+    label:
+      "Production AI systems engineer building GenAI, RAG, and workflow automation systems for enterprise environments.",
   },
   {
-    value: "3",
-    label: "recognition lanes: reviewing, judging, and teaching",
+    value: "IEEE",
+    label:
+      "Technical reviewer for AI and engineering research submissions at IEEE SoutheastCon 2026.",
   },
   {
-    value: "50+",
-    label: "students taught through university computer science recitations",
+    value: "Judge",
+    label:
+      "Invited judge for AI and student innovation projects through LA Hacks and LIVE AI Ivy Plus.",
   },
   {
-    value: "2026",
-    label: "active public judging and reviewing cycle",
+    value: "NYU",
+    label:
+      "Computer science teaching foundation across systems, memory management, data structures, OOP, and fundamentals.",
   },
 ];

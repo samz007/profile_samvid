@@ -1,22 +1,22 @@
 export const principles = [
   {
+    title: "Systems over demos",
+    summary:
+      "I care about AI systems that can be evaluated, operated, trusted, and improved after the prototype works.",
+  },
+  {
     title: "Judgment over hype",
     summary:
-      "I care about systems that can be reasoned about, evaluated, and trusted by the people who use them.",
+      "Good engineering is not just building fast. It is knowing what to trust, what to measure, and where systems can fail.",
   },
   {
-    title: "Recognition should feel earned",
+    title: "Teaching sharpens engineering",
     summary:
-      "Reviewing, judging, teaching, writing, and mentoring matter most when they reflect trusted judgment.",
+      "Explaining complex systems clearly is one of the best ways to improve technical judgment.",
   },
   {
-    title: "Teaching clarifies thinking",
+    title: "Recognition should be earned",
     summary:
-      "Explaining hard concepts cleanly is one of the best ways to sharpen engineering judgment.",
-  },
-  {
-    title: "Context over oversharing",
-    summary:
-      "The site gives enough context to understand my work while keeping the focus on judgment, scope, and direction.",
+      "Reviewing, judging, teaching, and mentoring matter most when they reflect real trust from technical communities.",
   },
 ];

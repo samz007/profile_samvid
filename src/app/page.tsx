@@ -40,9 +40,9 @@ export default function Home() {
           <aside className="surface rounded-lg">
             <div className="border-b border-[var(--line)] p-5">
               <p className="mono text-xs font-black uppercase text-[var(--accent-2)]">
-                Profile Signal
+                Snapshot
               </p>
-              <p className="mt-2 text-2xl font-black">AI systems engineer</p>
+              <p className="mt-2 text-2xl font-black">Production AI systems engineer</p>
             </div>
             <div className="grid grid-cols-2">
               {metrics.map((metric) => (
@@ -68,8 +68,8 @@ export default function Home() {
         <section className="section-shell py-24">
           <SectionHeader
             eyebrow="Selected Work"
-            title="Case-study themes from AI, platforms, and systems work."
-            description="A high-level view of the work areas behind my judgment, written with enough context to be useful without turning the site into a project dump."
+            title="Selected work across AI systems, platforms, and engineering judgment."
+            description="A focused view of the systems and experiences behind my technical judgment, from enterprise GenAI workflows to pricing platforms, support automation, and computer science teaching."
           />
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {caseStudyThemes.map((theme) => (
@@ -92,8 +92,8 @@ export default function Home() {
           <div className="section-shell">
             <SectionHeader
               eyebrow="Recognition"
-              title="Places where my engineering judgment has been trusted."
-              description="Judging, reviewing, teaching, and mentorship across technical communities, student innovation, and engineering growth."
+              title="External places where my technical judgment has been trusted."
+              description="Reviewing, judging, teaching, and mentorship across research, student innovation, and engineering growth."
             />
             <div className="grid gap-4 md:grid-cols-3">
               {recognitionItems.slice(0, 3).map((item) => (
@@ -112,7 +112,7 @@ export default function Home() {
         <section className="section-shell py-24">
           <SectionHeader
             eyebrow="Operating Principles"
-            title="Calm confidence, useful context, and sharp judgment."
+            title="How I think about engineering work."
           />
           <div className="grid gap-4 md:grid-cols-2">
             {principles.map((principle) => (
@@ -129,8 +129,8 @@ export default function Home() {
         <section className="section-shell pb-24">
           <SectionHeader
             eyebrow="Writing"
-            title="A public technical voice around production AI systems."
-            description="The writing layer is designed to support speaking, mentoring, search visibility, and long-term reputation."
+            title="Writing on production AI, platform engineering, and technical judgment."
+            description="Essays and notes designed to turn practical engineering experience into useful public thinking."
           />
           <div className="grid gap-4 md:grid-cols-2">
             {writing.map((item) => (

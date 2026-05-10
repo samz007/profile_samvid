@@ -14,8 +14,8 @@ export default function CaseStudiesPage() {
     <>
       <PageHeader
         eyebrow="Case Studies"
-        title="High-level views of the systems work behind my judgment."
-        description="These are concise summaries of themes I can discuss: AI systems, RAG patterns, platform engineering, optimization, and teaching."
+        title="Selected work across AI systems, platforms, and engineering judgment."
+        description="A focused view of the systems and experiences behind my technical judgment, from enterprise GenAI workflows to pricing platforms, support automation, and computer science teaching."
       />
       <main className="section-shell grid gap-4 pb-20 md:grid-cols-2">
         {caseStudyThemes.map((theme) => (

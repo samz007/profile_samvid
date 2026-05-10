@@ -17,8 +17,8 @@ export default function RecognitionPage() {
     <>
       <PageHeader
         eyebrow="Selected Work & Recognition"
-        title="Places where my engineering judgment has been trusted."
-        description="I build production AI and platform systems, and I also contribute outside day-to-day product work through judging, reviewing, teaching, and mentorship."
+        title="External places where my technical judgment has been trusted."
+        description="Reviewing, judging, teaching, and mentorship across research, student innovation, and engineering growth."
       />
       <main className="section-shell space-y-12 pb-20">
         <section className="surface rounded-lg p-7 md:p-9">
@@ -26,12 +26,13 @@ export default function RecognitionPage() {
             Recognition
           </p>
           <h2 className="text-3xl font-black">
-            A record of trusted judgment across technical communities.
+            A record of judgment trusted outside day-to-day product work.
           </h2>
           <p className="mt-5 max-w-4xl leading-8 text-[var(--muted)]">
-            This page highlights places where my engineering judgment has been
-            trusted across technical communities, student innovation, research
-            review, production systems, and career mentorship.
+            I build production AI and platform systems, but I also care about
+            the broader engineering community: reviewing technical work,
+            judging student innovation, mentoring builders, and helping people
+            make sharper technical and career decisions.
           </p>
         </section>
 
