@@ -10,9 +10,9 @@ export const metadata = {
 
 export default function MentorshipPage() {
   const focusAreas = [
-    "AI productivity workflows for engineering teams",
-    "Production GenAI and RAG system design",
-    "Backend/platform engineering career direction",
+    "AI systems thinking and evaluation",
+    "RAG concepts, failure modes, and trust surfaces",
+    "Backend and platform engineering career direction",
     "Resume, portfolio, and interview positioning",
     "Moving from execution to influence without formal authority",
   ];

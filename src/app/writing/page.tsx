@@ -6,7 +6,7 @@ import { writing } from "@/data/writing";
 export const metadata = {
   title: "Writing",
   description:
-    "Technical writing topics on production GenAI systems, RAG, support automation, and platform modernization.",
+    "Technical writing topics on AI systems, RAG, reliability, human judgment, and engineering communication.",
 };
 
 export default function WritingPage() {
@@ -14,7 +14,7 @@ export default function WritingPage() {
     <>
       <PageHeader
         eyebrow="Writing"
-        title="A public technical voice around production AI and platform systems."
+        title="A public technical voice around AI systems and engineering judgment."
         description="This section is intentionally staged as a publishing pipeline. Drafts become durable public proof of judgment over time."
       />
       <main className="section-shell grid gap-4 pb-20 md:grid-cols-2">

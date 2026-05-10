@@ -2,11 +2,11 @@ export const profile = {
   name: "Samvid Zare",
   location: "Seattle, WA",
   siteUrl: "https://portfolio-website-blue-xi-83.vercel.app",
-  headline: "I build production AI systems for enterprise workflows.",
+  headline: "I think, write, and mentor around AI systems and engineering judgment.",
   subheadline:
-    "AWS engineer focused on GenAI platforms, support automation, context systems, and large-scale modernization, with prior work across AWS, Target, and NYU.",
+    "A public profile for technical writing, mentorship, judging, reviewing, teaching, and long-term professional credibility without exposing employer-specific work.",
   positioning:
-    "Enterprise AI systems, platform engineering, and proof of judgment.",
+    "AI systems, engineering judgment, mentorship, and public proof.",
   links: {
     github: "https://github.com/samz007",
     linkedin: "",
@@ -15,30 +15,30 @@ export const profile = {
 };
 
 export const proofSignals = [
-  "AWS SDE II",
-  "Enterprise GenAI",
-  "Support Automation",
-  "Target Pricing Platforms",
+  "AI Systems",
+  "Engineering Judgment",
+  "Technical Writing",
   "IEEE Reviewer",
   "LA Hacks Invited Judge",
   "NYU CS Teaching",
+  "Mentorship",
 ];
 
 export const metrics = [
   {
-    value: "1,000+",
-    label: "GenAI agents supported by shared context foundations",
+    value: "6",
+    label: "technical manuscripts reviewed for IEEE SoutheastCon 2026",
   },
   {
-    value: "3K-4K",
-    label: "users enabled through low-friction contribution workflows",
+    value: "3",
+    label: "public recognition lanes: reviewing, judging, and teaching",
   },
   {
-    value: "5M+",
-    label: "items processed weekly in retail pricing workflows",
+    value: "50+",
+    label: "students taught through university computer science recitations",
   },
   {
-    value: "99.99%",
-    label: "availability for GenAI support enhancement services",
+    value: "2026",
+    label: "active public judging and reviewing cycle",
   },
 ];

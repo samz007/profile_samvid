@@ -18,7 +18,7 @@ export default function ProofPage() {
       <PageHeader
         eyebrow="Proof Ledger"
         title="A dated record of external recognition and leadership signals."
-        description="Built to support jobs, speaking, reviewing, judging, mentoring, and long-term evidence organization without making the public site feel like a legal packet."
+        description="Built to support speaking, reviewing, judging, mentoring, and long-term evidence organization without making the public site feel like a legal packet."
       />
       <main className="section-shell space-y-12 pb-20">
         <section className="surface rounded-lg p-7 md:p-9">

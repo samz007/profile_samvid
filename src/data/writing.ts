@@ -1,15 +1,15 @@
 export const writing = [
   {
-    title: "What production GenAI systems need beyond a demo",
+    title: "What reliable AI systems need beyond a demo",
     status: "Draft",
     summary:
-      "Why grounding, evaluation, adoption design, and workflow fit matter more than model novelty inside enterprises.",
+      "Why grounding, evaluation, trust boundaries, and user judgment matter more than model novelty.",
   },
   {
-    title: "RAG systems in enterprise support",
+    title: "RAG systems and failure modes",
     status: "Planned",
     summary:
-      "Retrieval quality, trust surfaces, and failure modes for support organizations using AI agents.",
+      "Retrieval quality, trust surfaces, uncertainty, and failure handling in knowledge-heavy AI tools.",
   },
   {
     title: "Human-in-the-loop AI approval workflows",
@@ -18,9 +18,9 @@ export const writing = [
       "How to design AI review systems that reduce bottlenecks without pretending judgment disappeared.",
   },
   {
-    title: "From retail pricing logic to distributed systems",
+    title: "What engineers learn from large systems",
     status: "Planned",
     summary:
-      "Lessons from pricing, forecasting, observability, and reliability at national retail scale.",
+      "Notes on reliability, observability, debugging, migration, and technical decision-making.",
   },
 ];

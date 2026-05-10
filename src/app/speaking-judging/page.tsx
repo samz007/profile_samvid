@@ -17,7 +17,7 @@ export default function SpeakingJudgingPage() {
     <>
       <PageHeader
         eyebrow="Speaking & Judging"
-        title="Available for AI, systems, hackathon, and engineering review opportunities."
+        title="Available for public AI, systems, hackathon, and review opportunities."
         description="This page gives organizers a quick read on relevant technical domains, selection signals, and prior judging or reviewing work."
       />
       <main className="section-shell grid gap-4 pb-20 md:grid-cols-3">

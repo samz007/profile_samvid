@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">Samvid Zare | Enterprise AI Systems</title>
-  <desc id="desc">Production AI systems for enterprise workflows.</desc>
+  <title id="title">Samvid Zare | AI Systems and Engineering Judgment</title>
+  <desc id="desc">Writing, mentorship, reviewing, judging, and public proof.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#080c12"/>
@@ -22,15 +22,15 @@
     <rect width="72" height="72" rx="12" fill="#ffffff" fill-opacity="0.06" stroke="#f7f3e8" stroke-opacity="0.24"/>
     <text x="36" y="45" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="24" font-weight="900" fill="#69a7ff">SZ</text>
     <text x="96" y="28" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#9ee6c7">Samvid Zare</text>
-    <text x="96" y="60" font-family="Inter, Arial, sans-serif" font-size="20" fill="#b5bdc8">Seattle · AWS · Enterprise AI</text>
+    <text x="96" y="60" font-family="Inter, Arial, sans-serif" font-size="20" fill="#b5bdc8">Seattle · AI Systems · Mentorship</text>
   </g>
   <text x="72" y="340" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="900" fill="#f7f3e8">
-    <tspan x="72" dy="0">Production AI systems</tspan>
-    <tspan x="72" dy="82">for enterprise workflows.</tspan>
+    <tspan x="72" dy="0">AI systems, writing,</tspan>
+    <tspan x="72" dy="82">and public proof.</tspan>
   </text>
   <text x="72" y="500" font-family="Inter, Arial, sans-serif" font-size="30" fill="#b5bdc8">
-    <tspan x="72" dy="0">GenAI platforms, support automation, context systems,</tspan>
-    <tspan x="72" dy="42">and high-scale decision workflows.</tspan>
+    <tspan x="72" dy="0">A public-safe profile for technical judgment,</tspan>
+    <tspan x="72" dy="42">reviewing, judging, teaching, and mentorship.</tspan>
   </text>
-  <text x="72" y="588" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#f3c969">Case Studies · Proof Ledger · Writing</text>
+  <text x="72" y="588" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#f3c969">Proof Ledger · Writing · Mentorship</text>
 </svg>

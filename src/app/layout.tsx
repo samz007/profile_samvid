@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     template: "%s | Samvid Zare",
   },
   description:
-    "Samvid Zare builds production AI systems, platform foundations, and enterprise workflows across support, pricing, and modernization domains.",
+    "Samvid Zare's public profile for AI systems thinking, engineering judgment, writing, mentorship, judging, and reviewing.",
   openGraph: {
     title: "Samvid Zare | Enterprise AI Systems",
     description:
-      "Production GenAI, platform engineering, support automation, and proof of judgment.",
+      "AI systems thinking, engineering judgment, writing, mentorship, and public proof.",
     type: "website",
     url: profile.siteUrl,
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Samvid Zare | Enterprise AI Systems",
     description:
-      "Production GenAI, platform engineering, support automation, and proof of judgment.",
+      "AI systems thinking, engineering judgment, writing, mentorship, and public proof.",
     images: ["/og.svg"],
   },
 };
@@ -44,16 +44,12 @@ export default function RootLayout({
     "@type": "Person",
     name: profile.name,
     url: profile.siteUrl,
-    jobTitle: "Software Development Engineer II",
+    jobTitle: "Software Engineer",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Seattle",
       addressRegion: "WA",
       addressCountry: "US",
-    },
-    worksFor: {
-      "@type": "Organization",
-      name: "Amazon Web Services",
     },
     alumniOf: [
       {
@@ -71,8 +67,8 @@ export default function RootLayout({
       "Generative AI",
       "Distributed Systems",
       "Platform Engineering",
-      "Support Automation",
-      "Retail Pricing Systems",
+      "Technical Writing",
+      "Mentorship",
     ],
   };
 

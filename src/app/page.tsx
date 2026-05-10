@@ -1,13 +1,12 @@
 import Link from "next/link";
 import { ButtonLink } from "@/components/button-link";
-import { CaseStudyCard } from "@/components/case-study-card";
 import { CTASection } from "@/components/cta-section";
 import { MetricCard } from "@/components/metric-card";
 import { ProofCard } from "@/components/proof-card";
 import { SectionHeader } from "@/components/section-header";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { caseStudies } from "@/data/case-studies";
+import { principles } from "@/data/principles";
 import { metrics, profile, proofSignals } from "@/data/profile";
 import { proofItems } from "@/data/proof";
 import { writing } from "@/data/writing";
@@ -20,7 +19,7 @@ export default function Home() {
         <section className="section-shell grid min-h-[calc(100svh-65px)] items-center gap-12 py-20 lg:grid-cols-[1fr_420px]">
           <div>
             <p className="mono mb-5 text-xs font-black uppercase text-[var(--accent)]">
-              {profile.location} · AWS · Target · Enterprise AI
+              {profile.location} · AI Systems · Writing · Mentorship
             </p>
             <h1 className="max-w-5xl text-balance text-6xl font-black leading-[0.92] tracking-normal md:text-8xl">
               {profile.headline}
@@ -29,10 +28,10 @@ export default function Home() {
               {profile.subheadline}
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <ButtonLink href="/case-studies" variant="primary">
-                View Case Studies
+              <ButtonLink href="/proof" variant="primary">
+                See Proof Ledger
               </ButtonLink>
-              <ButtonLink href="/proof">See Proof Ledger</ButtonLink>
+              <ButtonLink href="/writing">Read Writing Topics</ButtonLink>
               <ButtonLink href="/contact">Contact Options</ButtonLink>
             </div>
           </div>
@@ -42,7 +41,7 @@ export default function Home() {
               <p className="mono text-xs font-black uppercase text-[var(--accent-2)]">
                 Profile Signal
               </p>
-              <p className="mt-2 text-2xl font-black">Enterprise AI systems</p>
+              <p className="mt-2 text-2xl font-black">Public credibility system</p>
             </div>
             <div className="grid grid-cols-2">
               {metrics.map((metric) => (
@@ -67,13 +66,20 @@ export default function Home() {
 
         <section className="section-shell py-24">
           <SectionHeader
-            eyebrow="Selected Work"
-            title="Production case studies, written as engineering judgment."
-            description="These are sanitized views of high-scale work across GenAI support systems, customer context platforms, and retail pricing infrastructure."
+            eyebrow="Positioning"
+            title="A public profile without employer-specific project detail."
+            description="The site focuses on independent signals: writing, reviewing, judging, teaching, mentorship, and principles for thoughtful AI and systems work."
           />
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {caseStudies.slice(0, 5).map((study) => (
-              <CaseStudyCard key={study.slug} study={study} />
+            {principles.map((principle) => (
+              <article className="surface rounded-lg p-6" key={principle.title}>
+                <h3 className="text-2xl font-black leading-tight tracking-normal">
+                  {principle.title}
+                </h3>
+                <p className="mt-4 leading-7 text-[var(--muted)]">
+                  {principle.summary}
+                </p>
+              </article>
             ))}
           </div>
         </section>
@@ -103,7 +109,7 @@ export default function Home() {
           <SectionHeader
             eyebrow="Writing"
             title="A public technical voice around production AI systems."
-            description="The writing layer is intentionally designed to support jobs, speaking, mentoring, search visibility, and long-term reputation."
+            description="The writing layer is designed to support speaking, mentoring, search visibility, and long-term reputation."
           />
           <div className="grid gap-4 md:grid-cols-2">
             {writing.map((item) => (

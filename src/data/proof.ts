@@ -30,15 +30,15 @@ export const proofItems = [
   {
     category: "Teaching & Mentorship",
     title: "Production Mentorship",
-    organization: "AWS",
-    date: "2024-2025",
-    signal: "Mentored junior talent and helped convert early-stage work into production impact.",
+    organization: "Professional mentorship",
+    date: "Ongoing",
+    signal: "Mentors engineers on technical judgment, systems thinking, and career direction.",
   },
   {
     category: "Leadership",
-    title: "AI Productivity Enablement",
-    organization: "AWS",
-    date: "2023-2025",
-    signal: "Built workflows, guides, tooling, and office hours for AI adoption across teams.",
+    title: "AI Learning and Enablement",
+    organization: "Independent professional practice",
+    date: "Ongoing",
+    signal: "Develops reusable notes, guides, and learning patterns for applying AI thoughtfully.",
   },
 ];

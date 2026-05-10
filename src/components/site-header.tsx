@@ -2,7 +2,6 @@ import Link from "next/link";
 import { profile } from "@/data/profile";
 
 const navItems = [
-  ["Work", "/case-studies"],
   ["Proof", "/proof"],
   ["Writing", "/writing"],
   ["Mentorship", "/mentorship"],

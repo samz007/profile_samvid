@@ -19,10 +19,10 @@ export default function ContactPage() {
       />
       <main className="section-shell grid gap-4 pb-20 md:grid-cols-3">
         <ContactOption
-          title="Recruiting & roles"
-          description="Senior engineering, AI platform, backend, and leadership-without-authority conversations."
-          href="/recruiters"
-          label="Recruiter Summary"
+          title="Professional conversations"
+          description="Professional conversations can start here; detailed background is best shared privately through verified channels."
+          href="/profile"
+          label="Profile Summary"
         />
         <ContactOption
           title="Speaking & judging"

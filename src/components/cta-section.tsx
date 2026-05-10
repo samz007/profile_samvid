@@ -9,7 +9,7 @@ export function CTASection() {
             Next Step
           </p>
           <h2 className="text-balance text-4xl font-black leading-none tracking-normal">
-            Contact for senior roles, speaking, judging, or mentorship.
+            Contact for speaking, judging, reviewing, or mentorship.
           </h2>
           <p className="mt-5 leading-8 text-[var(--muted)]">
             Direct contact details stay private. Use verified channels and I can

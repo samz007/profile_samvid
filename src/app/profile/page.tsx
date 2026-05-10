@@ -4,18 +4,18 @@ import { SiteFooter } from "@/components/site-footer";
 import { metrics } from "@/data/profile";
 
 export const metadata = {
-  title: "Recruiters",
+  title: "Profile",
   description:
-    "Recruiter-focused summary for senior AI, platform engineering, and technical leadership opportunities.",
+    "Public-safe profile for AI systems, engineering judgment, writing, mentorship, and external recognition.",
 };
 
-export default function RecruitersPage() {
+export default function ProfilePage() {
   return (
     <>
       <PageHeader
-        eyebrow="Recruiters"
-        title="Senior engineer for enterprise AI, data platforms, and high-scale decision systems."
-        description="Best fit: teams building production GenAI workflows, support intelligence, RAG platforms, internal productivity tools, pricing/optimization systems, or platform modernization."
+        eyebrow="Profile"
+        title="A public-safe summary for people evaluating fit."
+        description="This page intentionally avoids employer-specific project detail. It gives a clean overview of public interests, recognition signals, and collaboration lanes."
       />
       <main className="section-shell pb-20">
         <section className="grid gap-4 md:grid-cols-4">
@@ -31,15 +31,20 @@ export default function RecruitersPage() {
           ))}
         </section>
         <section className="surface mt-8 rounded-lg p-8">
-          <h2 className="text-3xl font-black">Role targets</h2>
+          <h2 className="text-3xl font-black">Public collaboration lanes</h2>
+          <p className="mt-4 max-w-3xl leading-8 text-[var(--muted)]">
+            Detailed professional background can be shared privately through
+            verified channels where confidentiality and context are easier to
+            manage.
+          </p>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             {[
-              "Senior / Staff-leaning Software Engineer",
-              "AI Platform Engineer",
-              "Backend / Distributed Systems Engineer",
-              "GenAI Product Infrastructure",
-              "Enterprise Support Automation",
-              "Technical Lead without direct management",
+              "AI systems thinking",
+              "Technical writing and communication",
+              "Mentorship and engineering guidance",
+              "Judging and reviewing opportunities",
+              "Teaching and concept explanation",
+              "Technical leadership conversations",
             ].map((role) => (
               <p
                 className="rounded-md border border-[var(--line)] bg-white/6 p-4 font-bold"
@@ -50,8 +55,8 @@ export default function RecruitersPage() {
             ))}
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/case-studies" variant="primary">
-              Review Case Studies
+            <ButtonLink href="/proof" variant="primary">
+              Review Proof Ledger
             </ButtonLink>
             <ButtonLink href="/contact">Contact Options</ButtonLink>
           </div>
