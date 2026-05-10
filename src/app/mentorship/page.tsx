@@ -22,7 +22,7 @@ export default function MentorshipPage() {
       <PageHeader
         eyebrow="Mentorship"
         title="Practical guidance for engineers building stronger judgment."
-        description="The mentorship layer can later connect to Topmate while preserving privacy and keeping your main contact details off the open web."
+        description="Book through Topmate while keeping direct contact details off the open web."
       />
       <main className="section-shell grid gap-4 pb-20 md:grid-cols-2">
         {focusAreas.map((area) => (

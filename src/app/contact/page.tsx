@@ -15,27 +15,40 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="Reach out through verified channels."
-        description="To avoid public email spam, direct contact details are intentionally not posted here. Use LinkedIn, GitHub, or Topmate-style booking once linked."
+        description="To avoid public email spam, direct contact details are intentionally not posted here. Use LinkedIn, GitHub, or Topmate booking instead."
       />
-      <main className="section-shell grid gap-4 pb-20 md:grid-cols-3">
-        <ContactOption
-          title="Professional conversations"
-          description="Professional conversations can start here; detailed background is best shared privately through verified channels."
-          href="/profile"
-          label="Profile Summary"
-        />
-        <ContactOption
-          title="Speaking & judging"
-          description="AI, systems, hackathons, paper reviewing, judging, and panel opportunities."
-          href="/speaking-judging"
-          label="Organizer Profile"
-        />
-        <ContactOption
-          title="Mentorship"
-          description="Career guidance, AI productivity, system design, portfolio, and interview positioning."
-          href={profile.links.topmate}
-          label="Topmate coming soon"
-        />
+      <main className="section-shell pb-20">
+        <section className="mb-4 grid gap-4 md:grid-cols-3">
+          <ContactOption
+            title="Professional conversations"
+            description="Professional conversations can start here; detailed background is best shared privately through verified channels."
+            href="/profile"
+            label="Profile Summary"
+          />
+          <ContactOption
+            title="Speaking & judging"
+            description="AI, systems, hackathons, paper reviewing, judging, and panel opportunities."
+            href="/speaking-judging"
+            label="Organizer Profile"
+          />
+          <ContactOption
+            title="Mentorship"
+            description="Career guidance, AI productivity, system design, portfolio, and interview positioning."
+            href={profile.links.topmate}
+            label="Book on Topmate"
+          />
+        </section>
+
+        <section className="surface rounded-lg p-7">
+          <h2 className="text-2xl font-black">Verified links</h2>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <ButtonLink href={profile.links.linkedin} variant="primary">
+              LinkedIn
+            </ButtonLink>
+            <ButtonLink href={profile.links.topmate}>Topmate</ButtonLink>
+            <ButtonLink href={profile.links.github}>GitHub</ButtonLink>
+          </div>
+        </section>
       </main>
       <SiteFooter />
     </>

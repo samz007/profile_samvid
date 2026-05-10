@@ -9,8 +9,8 @@ export const profile = {
     "AI systems, engineering judgment, mentorship, and public proof.",
   links: {
     github: "https://github.com/samz007",
-    linkedin: "",
-    topmate: "",
+    linkedin: "https://linkedin.com/in/samvid-zare",
+    topmate: "https://topmate.io/samvid_zare",
   },
 };
 
