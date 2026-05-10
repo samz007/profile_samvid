@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     template: "%s | Samvid Zare",
   },
   description:
-    "Samvid Zare's public profile for AI systems thinking, engineering judgment, writing, mentorship, judging, and reviewing.",
+    "Samvid Zare builds production AI systems for enterprise workflows and contributes through judging, reviewing, teaching, writing, and mentorship.",
   openGraph: {
     title: "Samvid Zare | Enterprise AI Systems",
     description:
-      "AI systems thinking, engineering judgment, writing, mentorship, and public proof.",
+      "Production AI systems, engineering judgment, writing, mentorship, and recognition.",
     type: "website",
     url: profile.siteUrl,
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Samvid Zare | Enterprise AI Systems",
     description:
-      "AI systems thinking, engineering judgment, writing, mentorship, and public proof.",
+      "Production AI systems, engineering judgment, writing, mentorship, and recognition.",
     images: ["/og.svg"],
   },
 };
@@ -69,6 +69,8 @@ export default function RootLayout({
       "Platform Engineering",
       "Technical Writing",
       "Mentorship",
+      "RAG Systems",
+      "Support Automation",
     ],
   };
 

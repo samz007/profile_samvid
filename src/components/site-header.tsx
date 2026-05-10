@@ -2,8 +2,10 @@ import Link from "next/link";
 import { profile } from "@/data/profile";
 
 const navItems = [
-  ["Proof", "/proof"],
-  ["Writing", "/writing"],
+  ["Home", "/"],
+  ["Case Studies", "/case-studies"],
+  ["Recognition", "/recognition"],
+  ["Notes", "/writing"],
   ["Mentorship", "/mentorship"],
   ["Contact", "/contact"],
 ];

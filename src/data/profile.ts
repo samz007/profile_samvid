@@ -2,11 +2,11 @@ export const profile = {
   name: "Samvid Zare",
   location: "Seattle, WA",
   siteUrl: "https://portfolio-website-blue-xi-83.vercel.app",
-  headline: "I think, write, and mentor around AI systems and engineering judgment.",
+  headline: "I build production AI systems for enterprise workflows.",
   subheadline:
-    "A public profile for technical writing, mentorship, judging, reviewing, teaching, and long-term professional credibility without exposing employer-specific work.",
+    "Software engineer focused on GenAI platforms, support automation, RAG systems, and large-scale backend modernization, with prior experience across pricing systems and computer science teaching.",
   positioning:
-    "AI systems, engineering judgment, mentorship, and public proof.",
+    "AI systems, engineering judgment, mentorship, and recognition.",
   links: {
     github: "https://github.com/samz007",
     linkedin: "https://linkedin.com/in/samvid-zare",
@@ -14,24 +14,25 @@ export const profile = {
   },
 };
 
-export const proofSignals = [
+export const credibilitySignals = [
+  "AWS",
+  "Enterprise GenAI",
+  "RAG Systems",
+  "Target Pricing Platforms",
   "AI Systems",
-  "Engineering Judgment",
-  "Technical Writing",
   "IEEE Reviewer",
   "LA Hacks Invited Judge",
   "NYU CS Teaching",
-  "Mentorship",
 ];
 
 export const metrics = [
   {
     value: "6",
-    label: "technical manuscripts reviewed for IEEE SoutheastCon 2026",
+    label: "technical manuscripts reviewed for IEEE SoutheastCon",
   },
   {
     value: "3",
-    label: "public recognition lanes: reviewing, judging, and teaching",
+    label: "recognition lanes: reviewing, judging, and teaching",
   },
   {
     value: "50+",

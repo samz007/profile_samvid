@@ -15,7 +15,7 @@ export default function WritingPage() {
       <PageHeader
         eyebrow="Writing"
         title="A public technical voice around AI systems and engineering judgment."
-        description="This section is intentionally staged as a publishing pipeline. Drafts become durable public proof of judgment over time."
+        description="Notes on production AI, RAG systems, platform design, technical judgment, and career growth."
       />
       <main className="section-shell grid gap-4 pb-20 md:grid-cols-2">
         {writing.map((item) => (

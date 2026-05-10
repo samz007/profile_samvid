@@ -14,8 +14,8 @@ export default function ProfilePage() {
     <>
       <PageHeader
         eyebrow="Profile"
-        title="A public-safe summary for people evaluating fit."
-        description="This page intentionally avoids employer-specific project detail. It gives a clean overview of public interests, recognition signals, and collaboration lanes."
+        title="A concise summary for people evaluating fit."
+        description="A clean overview of my public interests, recognition signals, and collaboration lanes."
       />
       <main className="section-shell pb-20">
         <section className="grid gap-4 md:grid-cols-4">
@@ -33,9 +33,8 @@ export default function ProfilePage() {
         <section className="surface mt-8 rounded-lg p-8">
           <h2 className="text-3xl font-black">Public collaboration lanes</h2>
           <p className="mt-4 max-w-3xl leading-8 text-[var(--muted)]">
-            Detailed professional background can be shared privately through
-            verified channels where confidentiality and context are easier to
-            manage.
+            Deeper professional background is best discussed in the right
+            context, especially when a conversation needs nuance.
           </p>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             {[
@@ -55,8 +54,8 @@ export default function ProfilePage() {
             ))}
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href="/proof" variant="primary">
-              Review Proof Ledger
+            <ButtonLink href="/recognition" variant="primary">
+              See Recognition
             </ButtonLink>
             <ButtonLink href="/contact">Contact Options</ButtonLink>
           </div>

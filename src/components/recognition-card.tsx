@@ -1,4 +1,4 @@
-type ProofCardProps = {
+type RecognitionCardProps = {
   item: {
     category: string;
     title: string;
@@ -8,7 +8,7 @@ type ProofCardProps = {
   };
 };
 
-export function ProofCard({ item }: ProofCardProps) {
+export function RecognitionCard({ item }: RecognitionCardProps) {
   return (
     <article className="surface rounded-lg p-6">
       <p className="mono mb-4 text-xs font-black uppercase text-[var(--accent)]">

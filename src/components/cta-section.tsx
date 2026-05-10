@@ -9,18 +9,18 @@ export function CTASection() {
             Next Step
           </p>
           <h2 className="text-balance text-4xl font-black leading-none tracking-normal">
-            Contact for speaking, judging, reviewing, or mentorship.
+            Open to thoughtful conversations around AI systems and engineering leadership.
           </h2>
           <p className="mt-5 leading-8 text-[var(--muted)]">
-            Direct contact details stay private. Use verified channels and I can
-            route the conversation from there.
+            I am especially interested in selected speaking, judging, reviewing,
+            mentorship, and technical community opportunities.
           </p>
         </div>
         <div className="flex flex-wrap items-start gap-3 md:justify-end">
           <ButtonLink href="/contact" variant="primary">
-            Contact Options
+            Contact Me
           </ButtonLink>
-          <ButtonLink href="/proof">See Proof Ledger</ButtonLink>
+          <ButtonLink href="/recognition">See Recognition</ButtonLink>
         </div>
       </div>
     </section>

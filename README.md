@@ -1,6 +1,6 @@
 # Samvid Zare Personal Brand Site
 
-Next.js portfolio and proof-led personal brand site for Samvid Zare.
+Next.js personal brand site for Samvid Zare.
 
 ## Run Locally
 

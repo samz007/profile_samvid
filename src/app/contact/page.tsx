@@ -15,13 +15,13 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="Reach out through verified channels."
-        description="To avoid public email spam, direct contact details are intentionally not posted here. Use LinkedIn, GitHub, or Topmate booking instead."
+        description="Use LinkedIn, GitHub, or Topmate booking for the right kind of conversation."
       />
       <main className="section-shell pb-20">
         <section className="mb-4 grid gap-4 md:grid-cols-3">
           <ContactOption
-            title="Professional conversations"
-            description="Professional conversations can start here; detailed background is best shared privately through verified channels."
+          title="Professional conversations"
+          description="Professional conversations can start here when there is a clear fit or thoughtful reason to connect."
             href="/profile"
             label="Profile Summary"
           />

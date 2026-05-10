@@ -1,15 +1,15 @@
 export const writing = [
   {
-    title: "What reliable AI systems need beyond a demo",
+    title: "Production GenAI Beyond the Demo",
     status: "Draft",
     summary:
-      "Why grounding, evaluation, trust boundaries, and user judgment matter more than model novelty.",
+      "Notes on what enterprise AI systems need after the prototype works: evaluation, reliability, trust, adoption, and human review.",
   },
   {
-    title: "RAG systems and failure modes",
+    title: "RAG Systems for Support Workflows",
     status: "Planned",
     summary:
-      "Retrieval quality, trust surfaces, uncertainty, and failure handling in knowledge-heavy AI tools.",
+      "A practical breakdown of retrieval, context quality, hallucination risk, and workflow integration in support automation.",
   },
   {
     title: "Human-in-the-loop AI approval workflows",

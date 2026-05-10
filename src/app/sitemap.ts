@@ -6,7 +6,8 @@ const baseUrl = profile.siteUrl;
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
-    "/proof",
+    "/case-studies",
+    "/recognition",
     "/writing",
     "/mentorship",
     "/speaking-judging",

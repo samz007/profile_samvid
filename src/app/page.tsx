@@ -2,13 +2,14 @@ import Link from "next/link";
 import { ButtonLink } from "@/components/button-link";
 import { CTASection } from "@/components/cta-section";
 import { MetricCard } from "@/components/metric-card";
-import { ProofCard } from "@/components/proof-card";
+import { RecognitionCard } from "@/components/recognition-card";
 import { SectionHeader } from "@/components/section-header";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { caseStudyThemes } from "@/data/case-studies";
 import { principles } from "@/data/principles";
-import { metrics, profile, proofSignals } from "@/data/profile";
-import { proofItems } from "@/data/proof";
+import { credibilitySignals, metrics, profile } from "@/data/profile";
+import { recognitionItems } from "@/data/recognition";
 import { writing } from "@/data/writing";
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
         <section className="section-shell grid min-h-[calc(100svh-65px)] items-center gap-12 py-20 lg:grid-cols-[1fr_420px]">
           <div>
             <p className="mono mb-5 text-xs font-black uppercase text-[var(--accent)]">
-              {profile.location} · AI Systems · Writing · Mentorship
+              {profile.location} · AI Systems · Platform Engineering
             </p>
             <h1 className="max-w-5xl text-balance text-6xl font-black leading-[0.92] tracking-normal md:text-8xl">
               {profile.headline}
@@ -28,11 +29,11 @@ export default function Home() {
               {profile.subheadline}
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <ButtonLink href="/proof" variant="primary">
-                See Proof Ledger
+              <ButtonLink href="/case-studies" variant="primary">
+                View Case Studies
               </ButtonLink>
-              <ButtonLink href="/writing">Read Writing Topics</ButtonLink>
-              <ButtonLink href="/contact">Contact Options</ButtonLink>
+              <ButtonLink href="/recognition">See Recognition</ButtonLink>
+              <ButtonLink href="/contact">Contact Me</ButtonLink>
             </div>
           </div>
 
@@ -41,7 +42,7 @@ export default function Home() {
               <p className="mono text-xs font-black uppercase text-[var(--accent-2)]">
                 Profile Signal
               </p>
-              <p className="mt-2 text-2xl font-black">Public credibility system</p>
+              <p className="mt-2 text-2xl font-black">AI systems engineer</p>
             </div>
             <div className="grid grid-cols-2">
               {metrics.map((metric) => (
@@ -53,7 +54,7 @@ export default function Home() {
 
         <section className="border-y border-[var(--line)] bg-white/[0.035]">
           <div className="section-shell flex flex-wrap gap-3 py-5">
-            {proofSignals.map((signal) => (
+            {credibilitySignals.map((signal) => (
               <span
                 className="rounded-full border border-[var(--line)] bg-white/6 px-3 py-2 text-sm font-bold text-[var(--muted)]"
                 key={signal}
@@ -66,18 +67,21 @@ export default function Home() {
 
         <section className="section-shell py-24">
           <SectionHeader
-            eyebrow="Positioning"
-            title="A public profile without employer-specific project detail."
-            description="The site focuses on independent signals: writing, reviewing, judging, teaching, mentorship, and principles for thoughtful AI and systems work."
+            eyebrow="Selected Work"
+            title="Case-study themes from AI, platforms, and systems work."
+            description="A high-level view of the work areas behind my judgment, written with enough context to be useful without turning the site into a project dump."
           />
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {principles.map((principle) => (
-              <article className="surface rounded-lg p-6" key={principle.title}>
+            {caseStudyThemes.map((theme) => (
+              <article className="surface rounded-lg p-6" key={theme.title}>
+                <p className="mono mb-4 text-xs font-black uppercase text-[var(--accent-2)]">
+                  {theme.organization}
+                </p>
                 <h3 className="text-2xl font-black leading-tight tracking-normal">
-                  {principle.title}
+                  {theme.title}
                 </h3>
                 <p className="mt-4 leading-7 text-[var(--muted)]">
-                  {principle.summary}
+                  {theme.summary}
                 </p>
               </article>
             ))}
@@ -87,25 +91,42 @@ export default function Home() {
         <section className="border-y border-[var(--line)] bg-white/[0.035] py-24">
           <div className="section-shell">
             <SectionHeader
-              eyebrow="Proof Ledger"
-              title="External recognition, teaching, mentorship, and leadership signals."
-              description="A public-facing record of evidence that compounds over time without turning the site into an immigration packet."
+              eyebrow="Recognition"
+              title="Places where my engineering judgment has been trusted."
+              description="Judging, reviewing, teaching, and mentorship across technical communities, student innovation, and engineering growth."
             />
             <div className="grid gap-4 md:grid-cols-3">
-              {proofItems.slice(0, 3).map((item) => (
-                <ProofCard item={item} key={`${item.title}-${item.organization}`} />
+              {recognitionItems.slice(0, 3).map((item) => (
+                <RecognitionCard item={item} key={`${item.title}-${item.organization}`} />
               ))}
             </div>
             <Link
               className="mt-7 inline-flex font-black text-[var(--accent)]"
-              href="/proof"
+              href="/recognition"
             >
-              View full proof ledger
+              View recognition
             </Link>
           </div>
         </section>
 
         <section className="section-shell py-24">
+          <SectionHeader
+            eyebrow="Operating Principles"
+            title="Calm confidence, useful context, and sharp judgment."
+          />
+          <div className="grid gap-4 md:grid-cols-2">
+            {principles.map((principle) => (
+              <article className="surface rounded-lg p-6" key={principle.title}>
+                <h3 className="text-2xl font-black">{principle.title}</h3>
+                <p className="mt-4 leading-7 text-[var(--muted)]">
+                  {principle.summary}
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section-shell pb-24">
           <SectionHeader
             eyebrow="Writing"
             title="A public technical voice around production AI systems."

@@ -1,8 +1,8 @@
 import { CTASection } from "@/components/cta-section";
 import { PageHeader } from "@/components/page-header";
-import { ProofCard } from "@/components/proof-card";
+import { RecognitionCard } from "@/components/recognition-card";
 import { SiteFooter } from "@/components/site-footer";
-import { proofItems } from "@/data/proof";
+import { recognitionItems } from "@/data/recognition";
 
 export const metadata = {
   title: "Speaking & Judging",
@@ -11,7 +11,7 @@ export const metadata = {
 };
 
 export default function SpeakingJudgingPage() {
-  const items = proofItems.filter((item) => item.category === "Judging & Reviewing");
+  const items = recognitionItems.filter((item) => item.category === "Judging & Reviewing");
 
   return (
     <>
@@ -22,7 +22,7 @@ export default function SpeakingJudgingPage() {
       />
       <main className="section-shell grid gap-4 pb-20 md:grid-cols-3">
         {items.map((item) => (
-          <ProofCard item={item} key={`${item.title}-${item.organization}`} />
+          <RecognitionCard item={item} key={`${item.title}-${item.organization}`} />
         ))}
       </main>
       <CTASection />
