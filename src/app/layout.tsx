@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     url: profile.siteUrl,
     images: [
       {
-        url: "/opengraph-image",
+        url: "/og.svg",
         width: 1200,
         height: 630,
         alt: "Samvid Zare | Enterprise AI Systems",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Samvid Zare | Enterprise AI Systems",
     description:
       "Production GenAI, platform engineering, support automation, and proof of judgment.",
-    images: ["/opengraph-image"],
+    images: ["/og.svg"],
   },
 };
 
