@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { CTASection } from "@/components/cta-section";
 import { PageHeader } from "@/components/page-header";
 import { SiteFooter } from "@/components/site-footer";
 import { projects } from "@/data/content";
@@ -15,8 +14,8 @@ export default function ProjectsPage() {
     <>
       <PageHeader
         eyebrow="Projects"
-        title="Public products, experiments, and tools I’m building around career access, AI-assisted workflows, and practical decision-making."
-        description="A growing public body of products and experiments, starting with RoleTrails."
+        title="Projects"
+        description="Public products and experiments I’m building around career access, AI-assisted workflows, and practical decision-making."
       />
       <main className="section-shell grid gap-4 pb-20 md:grid-cols-2">
         {projects.map((project) => (
@@ -33,7 +32,7 @@ export default function ProjectsPage() {
               {project.shortDescription}
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
-              {project.focusTags.map((tag) => (
+              {project.focusTags.slice(0, 3).map((tag) => (
                 <span
                   className="rounded-full border border-[var(--line)] px-3 py-1 text-xs font-bold text-[var(--muted)]"
                   key={tag}
@@ -48,7 +47,6 @@ export default function ProjectsPage() {
           </Link>
         ))}
       </main>
-      <CTASection />
       <SiteFooter />
     </>
   );

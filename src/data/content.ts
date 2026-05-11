@@ -49,9 +49,9 @@ export const site = {
   description:
     "Samvid Zare builds public products around career access, AI-assisted development, mentorship, and practical engineering judgment.",
   hero:
-    "I build public products around career access, AI workflows, and practical engineering judgment.",
+    "I build public products around career access and practical engineering judgment.",
   intro:
-    "I’m a software engineer and product builder based in Seattle. My public work focuses on RoleTrails, mentorship, technical writing, judging/reviewing, and helping people make clearer career and engineering decisions.",
+    "I’m a software engineer and product builder focused on RoleTrails, mentorship, technical writing, and selected judging/reviewing work.",
 };
 
 export const links: Record<string, ExternalLink> = {
@@ -172,19 +172,18 @@ export const projects: Project[] = [
 export const roletrails = {
   project: projects[0],
   problem:
-    "Job seekers often move across job boards, company pages, LinkedIn posts, referrals, spreadsheets, recruiter messages, and saved links. RoleTrails is built to bring more structure to that process.",
+    "Job search is fragmented across job boards, company pages, LinkedIn posts, referrals, spreadsheets, and recruiter messages. RoleTrails is built to make discovery more organized.",
   whatBuilding: [
     "Role and company discovery",
     "Search and filtering",
     "Career-path exploration",
-    "User feedback loops",
-    "Testimonial collection",
-    "Future foundations for recommendations and job-matching workflows",
+    "Feedback loops",
+    "Future recommendation features",
   ],
   whyItMatters:
-    "Job search is not just an application problem. It is a discovery, clarity, and decision-making problem. RoleTrails is designed around that gap.",
+    "Job search is not just an application problem. It is a discovery and decision-making problem.",
   howBuilding:
-    "RoleTrails is being built with AI-assisted product development workflows, rapid iteration, and continuous product judgment. AI helps accelerate the build, but product taste, user empathy, and quality control still matter.",
+    "RoleTrails is built with AI-assisted product development, rapid iteration, and continuous product judgment.",
   whatThisShows:
     "RoleTrails reflects my interest in public product building, career access, AI-assisted development, and useful tools for real people.",
 };

@@ -6,7 +6,7 @@ export function CTASection() {
       <div className="surface grid gap-8 rounded-lg p-8 md:grid-cols-[1fr_360px] md:p-10">
         <div>
           <p className="mono mb-4 text-xs font-black uppercase text-[var(--accent)]">
-            Next Step
+            Contact
           </p>
           <h2 className="text-balance text-4xl font-black leading-none tracking-normal">
             Open to thoughtful conversations around public products and career access.
@@ -19,10 +19,8 @@ export function CTASection() {
         </div>
         <div className="flex flex-wrap items-start gap-3 md:justify-end">
           <ButtonLink href="/contact" variant="primary">
-            Contact Me
+            Contact me
           </ButtonLink>
-          <ButtonLink href="/recognition">See Recognition</ButtonLink>
-          <ButtonLink href="/projects/roletrails">View project</ButtonLink>
         </div>
       </div>
     </section>

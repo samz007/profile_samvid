@@ -1,10 +1,8 @@
 import { ButtonLink } from "@/components/button-link";
-import { CTASection } from "@/components/cta-section";
-import { ExternalLinkButton } from "@/components/external-link-button";
 import { PageHeader } from "@/components/page-header";
 import { SimpleCard } from "@/components/simple-card";
 import { SiteFooter } from "@/components/site-footer";
-import { links, roletrails } from "@/data/content";
+import { roletrails } from "@/data/content";
 
 const project = roletrails.project;
 
@@ -24,7 +22,7 @@ export default function RoleTrailsProjectPage() {
       />
       <main className="section-shell space-y-4 pb-20">
         <SimpleCard title="Overview">
-          <p>{project.longDescription}</p>
+          <p>{roletrails.problem}</p>
         </SimpleCard>
         <SimpleCard title="What I’m Building">
           <ul className="grid gap-3 md:grid-cols-2">
@@ -41,33 +39,22 @@ export default function RoleTrailsProjectPage() {
         </SimpleCard>
         <SimpleCard title="What I’m Measuring">
           <ul className="grid gap-3 md:grid-cols-2">
-            {project.metrics.map((item) => (
+            {project.metrics
+              .filter((item) => item !== "Searches performed")
+              .map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
         </SimpleCard>
-        <SimpleCard title="What This Shows">
-          <p>{roletrails.whatThisShows}</p>
-        </SimpleCard>
         <section className="surface rounded-lg p-7">
-          <h2 className="text-2xl font-black">Next Steps</h2>
+          <h2 className="text-2xl font-black">Contact / Feedback</h2>
           <div className="mt-6 flex flex-wrap gap-3">
-            {project.externalUrl ? (
-              <ExternalLinkButton link={links.roletrails} variant="primary" />
-            ) : null}
-            {project.feedbackUrl ? (
-              <ButtonLink href={project.feedbackUrl}>Share Feedback</ButtonLink>
-            ) : null}
-            {project.notesUrl ? (
-              <ButtonLink href={project.notesUrl}>Read Build Notes</ButtonLink>
-            ) : null}
             <ButtonLink href="/contact" variant="primary">
-              Contact Me
+              Contact / Feedback
             </ButtonLink>
           </div>
         </section>
       </main>
-      <CTASection />
       <SiteFooter />
     </>
   );
