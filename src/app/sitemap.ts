@@ -1,23 +1,25 @@
 import type { MetadataRoute } from "next";
-import { profile } from "@/data/profile";
+import { recognitionItems, site } from "@/data/content";
 
-const baseUrl = profile.siteUrl;
+const baseUrl = site.siteUrl;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
-    "/case-studies",
+    "/roletrails",
     "/recognition",
-    "/writing",
+    "/notes",
     "/mentorship",
-    "/speaking-judging",
-    "/profile",
     "/contact",
   ];
 
   return [
     ...routes.map((route) => ({
       url: `${baseUrl}${route}`,
+      lastModified: new Date(),
+    })),
+    ...recognitionItems.map((item) => ({
+      url: `${baseUrl}/recognition/${item.slug}`,
       lastModified: new Date(),
     })),
   ];

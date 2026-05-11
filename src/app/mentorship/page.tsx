@@ -1,35 +1,53 @@
+import { ButtonLink } from "@/components/button-link";
 import { CTASection } from "@/components/cta-section";
+import { ExternalLinkButton } from "@/components/external-link-button";
 import { PageHeader } from "@/components/page-header";
+import { SimpleCard } from "@/components/simple-card";
 import { SiteFooter } from "@/components/site-footer";
+import { links, mentorshipTopics } from "@/data/content";
 
 export const metadata = {
-  title: "Mentorship",
+  title: "Mentorship | Samvid Zare",
   description:
-    "Mentorship and guidance focus areas for engineers working on AI, platform systems, interviews, and career direction.",
+    "Mentorship on career direction, profile positioning, interviews, AI-assisted building, and technical communication.",
 };
 
 export default function MentorshipPage() {
-  const focusAreas = [
-    "AI systems thinking and evaluation",
-    "RAG concepts, failure modes, and trust surfaces",
-    "Backend and platform engineering career direction",
-    "Resume, portfolio, and interview positioning",
-    "Moving from execution to influence without formal authority",
-  ];
-
   return (
     <>
       <PageHeader
         eyebrow="Mentorship"
-        title="Practical guidance for engineers building stronger judgment."
-        description="Book through Topmate while keeping direct contact details off the open web."
+        title="I help engineers, students, and builders make sharper career and technical decisions."
+        description="I mentor people on career direction, profile positioning, interviews, project choices, AI-assisted building, backend/system design thinking, and technical communication."
       />
-      <main className="section-shell grid gap-4 pb-20 md:grid-cols-2">
-        {focusAreas.map((area) => (
-          <article className="surface rounded-lg p-6" key={area}>
-            <h2 className="text-xl font-black">{area}</h2>
-          </article>
-        ))}
+      <main className="section-shell space-y-8 pb-20">
+        <SimpleCard title="Practical Clarity">
+          <p>
+            The goal is practical clarity: understand the situation, identify
+            the real constraint, and leave with concrete next steps.
+          </p>
+        </SimpleCard>
+        <section className="grid gap-3 md:grid-cols-3">
+          {mentorshipTopics.map((topic) => (
+            <div
+              className="rounded-md border border-[var(--line)] bg-white/6 p-4 font-bold"
+              key={topic}
+            >
+              {topic}
+            </div>
+          ))}
+        </section>
+        <SimpleCard title="RoleTrails tie-in">
+          <p>
+            I also build RoleTrails, a free job discovery platform focused on
+            making career exploration more organized and accessible.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <ButtonLink href="/roletrails">View RoleTrails</ButtonLink>
+            <ExternalLinkButton link={links.linkedin} />
+            <ExternalLinkButton link={links.topmate} variant="primary" />
+          </div>
+        </SimpleCard>
       </main>
       <CTASection />
       <SiteFooter />

@@ -1,14 +1,5 @@
 import Link from "next/link";
-import { profile } from "@/data/profile";
-
-const navItems = [
-  ["Home", "/"],
-  ["Case Studies", "/case-studies"],
-  ["Recognition", "/recognition"],
-  ["Notes", "/writing"],
-  ["Mentorship", "/mentorship"],
-  ["Contact", "/contact"],
-];
+import { navItems, site } from "@/data/content";
 
 export function SiteHeader() {
   return (
@@ -18,10 +9,10 @@ export function SiteHeader() {
           <span className="grid size-9 place-items-center rounded-md border border-[var(--line)] bg-white/8 font-mono text-xs text-[var(--accent)]">
             SZ
           </span>
-          <span>{profile.name}</span>
+          <span>{site.name}</span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-bold text-[var(--muted)] md:flex">
-          {navItems.map(([label, href]) => (
+          {navItems.map(({ label, href }) => (
             <Link className="transition hover:text-white" href={href} key={href}>
               {label}
             </Link>

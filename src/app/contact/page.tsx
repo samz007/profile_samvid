@@ -1,88 +1,55 @@
 import { ButtonLink } from "@/components/button-link";
+import { ExternalLinkButton } from "@/components/external-link-button";
 import { PageHeader } from "@/components/page-header";
+import { SimpleCard } from "@/components/simple-card";
 import { SiteFooter } from "@/components/site-footer";
-import { profile } from "@/data/profile";
+import { links } from "@/data/content";
 
 export const metadata = {
-  title: "Contact",
+  title: "Contact | Samvid Zare",
   description:
-    "Verified contact channels for Samvid Zare without exposing a public email address.",
+    "Contact Samvid Zare for RoleTrails feedback, mentorship, judging, reviewing, writing, and selected collaboration opportunities.",
 };
+
+const contactCategories = [
+  "RoleTrails feedback or collaboration",
+  "Mentorship",
+  "Judging or reviewing opportunities",
+  "Speaking or panel opportunities",
+  "Public product collaboration",
+  "General professional contact",
+];
 
 export default function ContactPage() {
   return (
     <>
       <PageHeader
         eyebrow="Contact"
-        title="Reach out through verified channels."
-        description="Use LinkedIn, GitHub, or Topmate booking for the right kind of conversation."
+        title="Open to thoughtful conversations around public products, career access, and technical communities."
+        description="The best reasons to reach out are RoleTrails feedback, mentorship, judging or reviewing opportunities, writing, and selected collaboration."
       />
-      <main className="section-shell pb-20">
-        <section className="mb-4 grid gap-4 md:grid-cols-3">
-          <ContactOption
-          title="Professional conversations"
-          description="Professional conversations can start here when there is a clear fit or thoughtful reason to connect."
-            href="/profile"
-            label="Profile Summary"
-          />
-          <ContactOption
-            title="Speaking & judging"
-            description="AI, systems, hackathons, paper reviewing, judging, and panel opportunities."
-            href="/speaking-judging"
-            label="Organizer Profile"
-          />
-          <ContactOption
-            title="Mentorship"
-            description="Career guidance, AI productivity, system design, portfolio, and interview positioning."
-            href={profile.links.topmate}
-            label="Book on Topmate"
-          />
+      <main className="section-shell space-y-8 pb-20">
+        <section className="grid gap-3 md:grid-cols-3">
+          {contactCategories.map((category) => (
+            <div
+              className="rounded-md border border-[var(--line)] bg-white/6 p-4 font-bold"
+              key={category}
+            >
+              {category}
+            </div>
+          ))}
         </section>
-
-        <section className="surface rounded-lg p-7">
-          <h2 className="text-2xl font-black">Verified links</h2>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <ButtonLink href={profile.links.linkedin} variant="primary">
-              LinkedIn
-            </ButtonLink>
-            <ButtonLink href={profile.links.topmate}>Topmate</ButtonLink>
-            <ButtonLink href={profile.links.github}>GitHub</ButtonLink>
+        <SimpleCard title="Verified links">
+          <div className="flex flex-wrap gap-3">
+            <ExternalLinkButton link={links.linkedin} variant="primary" />
+            <ExternalLinkButton link={links.topmate} />
+            <ExternalLinkButton link={links.github} />
+            <ExternalLinkButton link={links.email} />
+            <ButtonLink href="/roletrails">RoleTrails</ButtonLink>
           </div>
-        </section>
+        </SimpleCard>
       </main>
       <SiteFooter />
     </>
-  );
-}
-
-function ContactOption({
-  title,
-  description,
-  href,
-  label,
-}: {
-  title: string;
-  description: string;
-  href: string;
-  label: string;
-}) {
-  return (
-    <article className="surface flex min-h-72 flex-col justify-between rounded-lg p-7">
-      <div>
-        <h2 className="text-2xl font-black">{title}</h2>
-        <p className="mt-4 leading-8 text-[var(--muted)]">{description}</p>
-      </div>
-      <div className="mt-8">
-        {href ? (
-          <ButtonLink href={href} variant="primary">
-            {label}
-          </ButtonLink>
-        ) : (
-          <span className="inline-flex min-h-11 items-center rounded-md border border-[var(--line)] bg-white/6 px-5 text-sm font-black text-[var(--muted)]">
-            {label}
-          </span>
-        )}
-      </div>
-    </article>
   );
 }

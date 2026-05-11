@@ -1,35 +1,32 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { profile } from "@/data/profile";
+import { links, site } from "@/data/content";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(profile.siteUrl),
+  metadataBase: new URL(site.siteUrl),
   title: {
-    default: "Samvid Zare | Enterprise AI Systems",
+    default: site.title,
     template: "%s | Samvid Zare",
   },
-  description:
-    "Samvid Zare builds production AI systems for enterprise workflows and contributes through judging, reviewing, teaching, writing, and mentorship.",
+  description: site.description,
   openGraph: {
-    title: "Samvid Zare | Enterprise AI Systems",
-    description:
-      "Production AI systems, engineering judgment, writing, mentorship, and recognition.",
+    title: site.title,
+    description: site.description,
     type: "website",
-    url: profile.siteUrl,
+    url: site.siteUrl,
     images: [
       {
         url: "/og.svg",
         width: 1200,
         height: 630,
-        alt: "Samvid Zare | Enterprise AI Systems",
+        alt: site.title,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Samvid Zare | Enterprise AI Systems",
-    description:
-      "Production AI systems, engineering judgment, writing, mentorship, and recognition.",
+    title: site.title,
+    description: site.description,
     images: ["/og.svg"],
   },
 };
@@ -42,8 +39,8 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: profile.name,
-    url: profile.siteUrl,
+    name: site.name,
+    url: site.siteUrl,
     jobTitle: "Software Engineer",
     address: {
       "@type": "PostalAddress",
@@ -61,16 +58,14 @@ export default function RootLayout({
         name: "National Institute of Technology Calicut",
       },
     ],
-    sameAs: [profile.links.github],
+    sameAs: [links.github.url, links.linkedin.url].filter(Boolean),
     knowsAbout: [
-      "Enterprise AI",
-      "Generative AI",
-      "Distributed Systems",
-      "Platform Engineering",
-      "Technical Writing",
+      "Public Products",
+      "Career Access",
+      "AI-Assisted Product Development",
+      "Engineering Judgment",
       "Mentorship",
-      "RAG Systems",
-      "Support Automation",
+      "Technical Notes",
     ],
   };
 

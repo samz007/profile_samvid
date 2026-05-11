@@ -9,11 +9,12 @@ export function CTASection() {
             Next Step
           </p>
           <h2 className="text-balance text-4xl font-black leading-none tracking-normal">
-            Open to selected conversations around AI systems and engineering leadership.
+            Open to thoughtful conversations around public products and career access.
           </h2>
           <p className="mt-5 leading-8 text-[var(--muted)]">
-            I’m especially interested in opportunities where production AI
-            experience, platform thinking, and technical judgment are useful.
+            I’m especially interested in conversations around RoleTrails,
+            AI-assisted development, mentorship, judging, reviewing, writing,
+            and selected collaboration opportunities.
           </p>
         </div>
         <div className="flex flex-wrap items-start gap-3 md:justify-end">
@@ -21,7 +22,7 @@ export function CTASection() {
             Contact Me
           </ButtonLink>
           <ButtonLink href="/recognition">See Recognition</ButtonLink>
-          <ButtonLink href="/case-studies">View Case Studies</ButtonLink>
+          <ButtonLink href="/roletrails">View RoleTrails</ButtonLink>
         </div>
       </div>
     </section>
