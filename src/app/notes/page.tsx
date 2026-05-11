@@ -1,4 +1,5 @@
 import { CTASection } from "@/components/cta-section";
+import { ButtonLink } from "@/components/button-link";
 import { PageHeader } from "@/components/page-header";
 import { SimpleCard } from "@/components/simple-card";
 import { SiteFooter } from "@/components/site-footer";
@@ -22,6 +23,9 @@ export default function NotesPage() {
         {notes.map((note) => (
           <SimpleCard eyebrow={note.status} title={note.title} key={note.title}>
             <p>{note.summary}</p>
+            <div className="mt-6">
+              <ButtonLink href={`/notes/${note.slug}`}>Read note</ButtonLink>
+            </div>
           </SimpleCard>
         ))}
       </main>

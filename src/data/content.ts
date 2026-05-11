@@ -197,28 +197,52 @@ export const recognitionItems = [
 
 export const notes = [
   {
+    slug: "building-roletrails-in-public",
     title: "Building RoleTrails in Public",
     status: "Draft",
     summary:
       "Notes on building a public job discovery product with AI-assisted development workflows, product judgment, and user feedback.",
+    body: [
+      "RoleTrails is my public product-building lane for career access. The goal is to make job discovery less scattered and more useful for people navigating roles, companies, and career paths.",
+      "The build process is intentionally public-product oriented: define the user problem, ship the smallest useful surface, gather feedback, and improve the product through measured iteration.",
+      "AI-assisted development helps with speed, but the product still depends on judgment: what to build, what to remove, what to measure, and how to keep the experience useful for real job seekers.",
+    ],
   },
   {
+    slug: "ai-assisted-product-development",
     title: "AI-Assisted Product Development Without Losing Taste",
     status: "Planned",
     summary:
       "How to use AI coding tools for speed without outsourcing product thinking, engineering judgment, or quality.",
+    body: [
+      "AI coding tools are powerful accelerators, but they do not replace taste. They make it easier to generate options; they do not decide which options deserve to exist.",
+      "The useful workflow is not blind generation. It is structured iteration: clarify the user need, constrain the implementation, review the output, test behavior, and keep the product coherent.",
+      "The highest leverage skill is knowing when to accept, reshape, or reject generated work.",
+    ],
   },
   {
+    slug: "rag-systems-without-the-hype",
     title: "RAG Systems Without the Hype",
     status: "Planned",
     summary:
       "A practical note on retrieval, grounding, evaluation, and failure modes in AI systems, written from public-safe principles.",
+    body: [
+      "RAG systems are useful when they improve context quality and user trust. They are not automatically reliable because retrieval exists.",
+      "The important questions are practical: what sources are trusted, how retrieval is evaluated, how uncertainty is surfaced, and what happens when the system does not know enough.",
+      "Good RAG design is less about appearing intelligent and more about making the system easier to verify.",
+    ],
   },
   {
+    slug: "what-engineers-learn-from-helping-job-seekers",
     title: "What Engineers Learn from Helping Job Seekers",
     status: "Planned",
     summary:
       "Observations from mentorship, job discovery, profile positioning, and career decision-making.",
+    body: [
+      "Helping job seekers reveals how much of career progress depends on clarity: what role someone is aiming for, what evidence they can show, and what gaps are actually blocking them.",
+      "Engineering mentorship often becomes a product-thinking exercise. The task is to reduce ambiguity, create options, and turn fuzzy anxiety into concrete next steps.",
+      "That is also the motivation behind RoleTrails: better discovery, clearer paths, and more useful tools for career decisions.",
+    ],
   },
 ];
 
