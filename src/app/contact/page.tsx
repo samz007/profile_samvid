@@ -45,7 +45,7 @@ export default function ContactPage() {
             <ExternalLinkButton link={links.topmate} />
             <ExternalLinkButton link={links.github} />
             <ExternalLinkButton link={links.email} />
-            <ButtonLink href="/roletrails">RoleTrails</ButtonLink>
+            <ButtonLink href="/projects/roletrails">RoleTrails</ButtonLink>
           </div>
         </SimpleCard>
       </main>

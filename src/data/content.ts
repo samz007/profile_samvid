@@ -6,6 +6,41 @@ export type ExternalLink = {
   description: string;
 };
 
+export type ProjectStatus =
+  | "Active"
+  | "Building"
+  | "Researching"
+  | "Planned"
+  | "Paused"
+  | "Archived";
+
+export type ProjectType =
+  | "Public Product"
+  | "Tool"
+  | "Experiment"
+  | "Open Source"
+  | "Writing Project"
+  | "Community Project";
+
+export type Project = {
+  title: string;
+  slug: string;
+  status: ProjectStatus;
+  type: ProjectType;
+  shortDescription: string;
+  longDescription: string;
+  focusTags: string[];
+  year: string;
+  externalUrl: string;
+  githubUrl: string;
+  notesUrl: string;
+  feedbackUrl: string;
+  isFeatured: boolean;
+  visibility: "public" | "coming_soon" | "private";
+  metrics: string[];
+  links: ExternalLink[];
+};
+
 export const site = {
   name: "Samvid Zare",
   location: "Seattle, WA",
@@ -80,7 +115,7 @@ export const links: Record<string, ExternalLink> = {
 
 export const navItems = [
   { label: "Home", href: "/" },
-  { label: "RoleTrails", href: "/roletrails" },
+  { label: "Projects", href: "/projects" },
   { label: "Recognition", href: "/recognition" },
   { label: "Notes", href: "/notes" },
   { label: "Mentorship", href: "/mentorship" },
@@ -98,41 +133,60 @@ export const credibilityChips = [
   "Seattle",
 ];
 
+export const projects: Project[] = [
+  {
+    title: "RoleTrails",
+    slug: "roletrails",
+    status: "Active",
+    type: "Public Product",
+    shortDescription:
+      "A free job discovery platform helping people explore roles, companies, and career paths in one place.",
+    longDescription:
+      "RoleTrails is my public product experiment around career access. The goal is simple: make job discovery less fragmented and more useful for people navigating career decisions.",
+    focusTags: [
+      "Career Access",
+      "Job Discovery",
+      "AI-Assisted Development",
+      "Public Product",
+    ],
+    year: "2026",
+    externalUrl: links.roletrails.url,
+    githubUrl: "",
+    notesUrl: "/notes/building-roletrails-in-public",
+    feedbackUrl: "",
+    isFeatured: true,
+    visibility: "public",
+    metrics: [
+      "Users helped",
+      "Feedback quality",
+      "Returning users",
+      "Roles explored",
+      "Searches performed",
+      "Testimonials",
+      "Reported interviews or job outcomes",
+    ],
+    links: [links.roletrails],
+  },
+];
+
 export const roletrails = {
-  name: "RoleTrails",
-  tagline:
-    "A free job discovery platform helping people explore roles, companies, and career paths in one place.",
-  summary:
-    "RoleTrails is a public product experiment focused on making job discovery less fragmented and more useful for job seekers. It brings together career exploration, role discovery, and product-led learning into one public system.",
-  buildNote:
-    "Built using AI-assisted product development workflows, rapid iteration, and feedback from real users.",
+  project: projects[0],
   problem:
-    "Job seekers often search across fragmented job boards, company pages, LinkedIn posts, referrals, spreadsheets, and recruiter messages. RoleTrails is an attempt to make that discovery process more organized and accessible.",
-  productIdea:
-    "Create one place where people can explore roles, companies, and career paths while reducing the friction of scattered job search workflows.",
-  whatIBuilt: [
-    "Job discovery experience",
-    "Role and company browsing",
+    "Job seekers often move across job boards, company pages, LinkedIn posts, referrals, spreadsheets, recruiter messages, and saved links. RoleTrails is built to bring more structure to that process.",
+  whatBuilding: [
+    "Role and company discovery",
     "Search and filtering",
-    "Public career-access product",
-    "Foundation for user feedback and testimonials",
-    "Foundation for future job-matching and recommendation features",
+    "Career-path exploration",
+    "User feedback loops",
+    "Testimonial collection",
+    "Future foundations for recommendations and job-matching workflows",
   ],
-  whyIBuilt:
-    "I wanted to build something useful for people navigating career decisions, while also learning how to ship a public product quickly with AI-assisted development workflows.",
-  aiAssistedDevelopment:
-    "RoleTrails was built through modern AI-assisted product development, using rapid iteration, product judgment, and continuous refinement instead of treating AI as a replacement for thinking.",
-  measuring: [
-    "Users helped",
-    "Feedback quality",
-    "Testimonials",
-    "Returning users",
-    "Roles explored",
-    "Searches performed",
-    "People who report interviews or job outcomes",
-  ],
+  whyItMatters:
+    "Job search is not just an application problem. It is a discovery, clarity, and decision-making problem. RoleTrails is designed around that gap.",
+  howBuilding:
+    "RoleTrails is being built with AI-assisted product development workflows, rapid iteration, and continuous product judgment. AI helps accelerate the build, but product taste, user empathy, and quality control still matter.",
   whatThisShows:
-    "RoleTrails shows public product execution, career-access thinking, AI-assisted development, user empathy, and the ability to ship useful tools outside a corporate environment.",
+    "RoleTrails reflects my interest in public product building, career access, AI-assisted development, and useful tools for real people.",
 };
 
 export const recognitionItems = [

@@ -43,7 +43,7 @@ export default function MentorshipPage() {
             making career exploration more organized and accessible.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <ButtonLink href="/roletrails">View RoleTrails</ButtonLink>
+            <ButtonLink href="/projects/roletrails">View project</ButtonLink>
             <ExternalLinkButton link={links.linkedin} />
             <ExternalLinkButton link={links.topmate} variant="primary" />
           </div>

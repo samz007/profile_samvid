@@ -22,7 +22,7 @@ export function CTASection() {
             Contact Me
           </ButtonLink>
           <ButtonLink href="/recognition">See Recognition</ButtonLink>
-          <ButtonLink href="/roletrails">View RoleTrails</ButtonLink>
+          <ButtonLink href="/projects/roletrails">View project</ButtonLink>
         </div>
       </div>
     </section>

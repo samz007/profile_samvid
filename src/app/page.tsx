@@ -25,7 +25,7 @@ export default function Home() {
         <section className="section-shell grid min-h-[calc(100svh-65px)] items-center gap-12 py-20 lg:grid-cols-[1fr_420px]">
           <div>
             <p className="mono mb-5 text-xs font-black uppercase text-[var(--accent)]">
-              {site.location} · Public Products · AI Systems · Career Access
+              {site.location} · Public Products · AI-Assisted Development · Career Access
             </p>
             <h1 className="max-w-5xl text-balance text-6xl font-black leading-[0.92] tracking-normal md:text-8xl">
               {site.hero}
@@ -34,8 +34,8 @@ export default function Home() {
               {site.intro}
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <ButtonLink href="/roletrails" variant="primary">
-                View RoleTrails
+              <ButtonLink href="/projects" variant="primary">
+                View Projects
               </ButtonLink>
               <ButtonLink href="/recognition">See Recognition</ButtonLink>
               <ButtonLink href="/contact">Contact Me</ButtonLink>
@@ -46,12 +46,12 @@ export default function Home() {
             <p className="mono mb-5 text-xs font-black uppercase text-[var(--accent-2)]">
               Featured Public Product
             </p>
-            <h2 className="text-4xl font-black">{roletrails.name}</h2>
+            <h2 className="text-4xl font-black">{roletrails.project.title}</h2>
             <p className="mt-4 leading-8 text-[var(--muted)]">
-              {roletrails.tagline}
+              {roletrails.project.shortDescription}
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <ButtonLink href="/roletrails" variant="primary">
+              <ButtonLink href="/projects/roletrails" variant="primary">
                 Explore
               </ButtonLink>
               <ExternalLinkButton link={links.roletrails} />
@@ -74,17 +74,18 @@ export default function Home() {
 
         <section className="section-shell py-24">
           <SectionHeader
-            eyebrow="RoleTrails"
-            title="A free job discovery platform for exploring roles, companies, and career paths."
-            description={roletrails.summary}
+            eyebrow="Featured Project"
+            title={roletrails.project.title}
+            description={roletrails.project.shortDescription}
           />
           <div className="surface rounded-lg p-7">
             <p className="max-w-4xl leading-8 text-[var(--muted)]">
-              {roletrails.buildNote}
+              Built as a public product experiment around career access, job
+              search friction, and AI-assisted development.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <ButtonLink href="/roletrails" variant="primary">
-                View RoleTrails
+              <ButtonLink href="/projects/roletrails" variant="primary">
+                View project
               </ButtonLink>
               <ButtonLink href="/notes">Read Build Notes</ButtonLink>
               <ButtonLink href="/contact">Share Feedback</ButtonLink>

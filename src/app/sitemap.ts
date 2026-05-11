@@ -6,8 +6,8 @@ const baseUrl = site.siteUrl;
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
-    "/products",
-    "/roletrails",
+    "/projects",
+    "/projects/roletrails",
     "/recognition",
     "/notes",
     "/mentorship",

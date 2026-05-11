@@ -51,7 +51,7 @@ export default function RecognitionPage() {
         <section>
           <h2 className="mb-5 text-3xl font-black">Public Products</h2>
           <SimpleCard title="RoleTrails">
-            <p>{roletrails.summary}</p>
+            <p>{roletrails.project.longDescription}</p>
           </SimpleCard>
         </section>
 
