@@ -49,9 +49,9 @@ export const site = {
   description:
     "Samvid Zare builds public products around career access, AI-assisted development, mentorship, and practical engineering judgment.",
   hero:
-    "I build public products around career access and practical engineering judgment.",
+    "I build public products for job discovery, career decisions, and AI-assisted workflows.",
   intro:
-    "I’m a software engineer and product builder focused on RoleTrails, mentorship, technical writing, and selected judging/reviewing work.",
+    "I’m a software engineer and product builder creating RoleTrails, writing about practical AI-assisted development, and contributing through mentorship, judging, and reviewing.",
 };
 
 export const links: Record<string, ExternalLink> = {

@@ -14,46 +14,52 @@ export default function Home() {
     <>
       <SiteHeader />
       <main>
-        <section className="section-shell py-20 md:py-28">
-          <div>
+        <section className="section-shell grid items-center gap-10 py-14 md:py-18 lg:grid-cols-[minmax(0,720px)_minmax(320px,420px)] lg:justify-between lg:py-20">
+          <div className="max-w-[720px]">
             <p className="mono mb-5 text-xs font-black uppercase text-[var(--accent)]">
               {site.location} · Public Products · AI-Assisted Development
             </p>
-            <h1 className="max-w-5xl text-balance text-6xl font-black leading-[0.92] tracking-normal md:text-8xl">
+            <h1 className="text-balance text-4xl font-black leading-[1.02] tracking-normal md:text-5xl lg:text-6xl">
               {site.hero}
             </h1>
-            <p className="mt-7 max-w-3xl text-xl leading-9 text-[var(--muted)]">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--muted)] md:text-xl">
               {site.intro}
             </p>
-            <div className="mt-9 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap gap-3">
               <ButtonLink href="/projects" variant="primary">
                 View Projects
               </ButtonLink>
-              <ButtonLink href="/recognition">See Recognition</ButtonLink>
+              <ButtonLink href="/projects/roletrails">Explore RoleTrails</ButtonLink>
               <ButtonLink href="/contact">Contact</ButtonLink>
             </div>
           </div>
-        </section>
 
-        <section className="section-shell py-16">
-          <SectionHeader
-            eyebrow="Featured Project"
-            title="RoleTrails"
-            description="A free job discovery platform helping people explore roles, companies, and career paths in one place."
-          />
-          <div className="surface rounded-lg p-7 md:flex md:items-end md:justify-between md:gap-8">
-            <div>
-              <h2 className="text-3xl font-black">{roletrails.project.title}</h2>
-              <p className="mt-4 max-w-2xl leading-8 text-[var(--muted)]">
-                {roletrails.project.shortDescription}
-              </p>
+          <aside className="surface w-full max-w-[420px] rounded-lg p-6 lg:justify-self-end">
+            <p className="mono mb-5 text-xs font-black uppercase text-[var(--accent-2)]">
+              Currently Building
+            </p>
+            <h2 className="text-3xl font-black">{roletrails.project.title}</h2>
+            <p className="mt-4 leading-8 text-[var(--muted)]">
+              {roletrails.project.shortDescription}
+            </p>
+            <div className="mt-6 grid gap-3 border-y border-[var(--line)] py-5 text-sm">
+              <div className="flex items-center justify-between gap-4">
+                <span className="font-bold text-[var(--faint)]">Status</span>
+                <span className="font-black">{roletrails.project.status}</span>
+              </div>
+              <div>
+                <span className="font-bold text-[var(--faint)]">Focus</span>
+                <p className="mt-1 font-black">
+                  Career Access · Job Discovery · AI-Assisted Development
+                </p>
+              </div>
             </div>
-            <div className="mt-7 flex flex-wrap gap-3">
+            <div className="mt-6">
               <ButtonLink href="/projects/roletrails" variant="primary">
                 View project
               </ButtonLink>
             </div>
-          </div>
+          </aside>
         </section>
 
         <section className="border-y border-[var(--line)] bg-white/[0.035] py-16">
