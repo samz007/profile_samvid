@@ -5,7 +5,7 @@ export function SiteFooter() {
     <footer className="border-t border-[var(--line)]">
       <div className="section-shell flex flex-wrap items-center justify-between gap-3 py-8 text-sm text-[var(--faint)]">
         <span>{site.name}</span>
-        <span>Public products, career access, and engineering judgment</span>
+        <span>Building tools, notes, and mentorship around career clarity.</span>
         <span>{new Date().getFullYear()}</span>
       </div>
     </footer>

@@ -45,13 +45,13 @@ export const site = {
   name: "Samvid Zare",
   location: "Seattle, WA",
   siteUrl: "https://portfolio-website-blue-xi-83.vercel.app",
-  title: "Samvid Zare | Public Products, AI Systems & Career Access",
+  title: "Samvid Zare | RoleTrails, Job Discovery & Career Clarity",
   description:
-    "Samvid Zare builds public products around career access, AI-assisted development, mentorship, and practical engineering judgment.",
+    "Samvid Zare builds RoleTrails and writes about job discovery, career clarity, AI-assisted development, and mentorship.",
   hero:
-    "I build public products for job discovery, career decisions, and AI-assisted workflows.",
+    "Building tools for people navigating their next career move.",
   intro:
-    "I’m a software engineer and product builder creating RoleTrails, writing about practical AI-assisted development, and contributing through mentorship, judging, and reviewing.",
+    "I’m a software engineer and product builder creating RoleTrails, a job discovery platform for exploring roles, companies, and career paths without bouncing across ten different places.",
 };
 
 export const links: Record<string, ExternalLink> = {
@@ -140,9 +140,9 @@ export const projects: Project[] = [
     status: "Active",
     type: "Public Product",
     shortDescription:
-      "A free job discovery platform helping people explore roles, companies, and career paths in one place.",
+      "A free job discovery platform for exploring roles, companies, and career paths in one place.",
     longDescription:
-      "RoleTrails is my public product experiment around career access. The goal is simple: make job discovery less fragmented and more useful for people navigating career decisions.",
+      "RoleTrails is my public product experiment for job discovery and career clarity. The goal is simple: make the next career move less scattered and more useful for people navigating decisions.",
     focusTags: [
       "Career Access",
       "Job Discovery",
@@ -185,7 +185,7 @@ export const roletrails = {
   howBuilding:
     "RoleTrails is built with AI-assisted product development, rapid iteration, and continuous product judgment.",
   whatThisShows:
-    "RoleTrails reflects my interest in public product building, career access, AI-assisted development, and useful tools for real people.",
+    "RoleTrails reflects my interest in building in public, job discovery, AI-assisted development, and useful tools for real people.",
 };
 
 export const recognitionItems = [
@@ -256,7 +256,7 @@ export const notes = [
     summary:
       "Notes on building a public job discovery product with AI-assisted development workflows, product judgment, and user feedback.",
     body: [
-      "RoleTrails is my public product-building lane for career access. The goal is to make job discovery less scattered and more useful for people navigating roles, companies, and career paths.",
+      "RoleTrails is my public product-building lane for job discovery and career clarity. The goal is to make the search less scattered and more useful for people navigating roles, companies, and career paths.",
       "The build process is intentionally public-product oriented: define the user problem, ship the smallest useful surface, gather feedback, and improve the product through measured iteration.",
       "AI-assisted development helps with speed, but the product still depends on judgment: what to build, what to remove, what to measure, and how to keep the experience useful for real job seekers.",
     ],
@@ -266,7 +266,7 @@ export const notes = [
     title: "AI-Assisted Product Development Without Losing Taste",
     status: "Planned",
     summary:
-      "How to use AI coding tools for speed without outsourcing product thinking, engineering judgment, or quality.",
+      "How to use AI coding tools for speed without outsourcing product thinking, taste, or quality.",
     body: [
       "AI coding tools are powerful accelerators, but they do not replace taste. They make it easier to generate options; they do not decide which options deserve to exist.",
       "The useful workflow is not blind generation. It is structured iteration: clarify the user need, constrain the implementation, review the output, test behavior, and keep the product coherent.",

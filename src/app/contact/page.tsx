@@ -25,7 +25,7 @@ export default function ContactPage() {
     <>
       <PageHeader
         eyebrow="Contact"
-        title="Open to thoughtful conversations around public products, career access, and technical communities."
+        title="Open to thoughtful conversations around career clarity, AI-assisted products, and technical communities."
         description="The best reasons to reach out are RoleTrails feedback, mentorship, judging or reviewing opportunities, writing, and selected collaboration."
       />
       <main className="section-shell space-y-8 pb-20">

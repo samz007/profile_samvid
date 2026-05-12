@@ -8,7 +8,7 @@ import { notes } from "@/data/content";
 export const metadata = {
   title: "Notes | Samvid Zare",
   description:
-    "Writing on public products, AI-assisted development, career access, and engineering judgment.",
+    "Writing from building, mentoring, and learning in public.",
 };
 
 export default function NotesPage() {
@@ -16,7 +16,7 @@ export default function NotesPage() {
     <>
       <PageHeader
         eyebrow="Notes"
-        title="Writing on public products, AI-assisted development, career access, and engineering judgment."
+        title="Writing from building, mentoring, and learning in public."
         description="Notes focus on general lessons, public product thinking, and useful technical judgment."
       />
       <main className="section-shell grid gap-4 pb-20 md:grid-cols-2">

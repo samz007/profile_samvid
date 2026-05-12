@@ -9,7 +9,7 @@ export function CTASection() {
             Contact
           </p>
           <h2 className="text-balance text-4xl font-black leading-none tracking-normal">
-            Open to thoughtful conversations around public products and career access.
+            Open to thoughtful conversations around career clarity and useful product building.
           </h2>
           <p className="mt-5 leading-8 text-[var(--muted)]">
             I’m especially interested in conversations around RoleTrails,

@@ -60,10 +60,10 @@ export default function RootLayout({
     ],
     sameAs: [links.github.url, links.linkedin.url].filter(Boolean),
     knowsAbout: [
-      "Public Products",
-      "Career Access",
+      "Job Discovery",
+      "Career Clarity",
       "AI-Assisted Product Development",
-      "Engineering Judgment",
+      "Building in Public",
       "Mentorship",
       "Technical Notes",
     ],

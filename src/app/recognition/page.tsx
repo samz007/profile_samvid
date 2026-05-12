@@ -8,7 +8,7 @@ import { notes, recognitionItems, roletrails } from "@/data/content";
 export const metadata = {
   title: "Recognition | Samvid Zare",
   description:
-    "Public reviewing, judging, mentorship, and community contribution across AI, engineering, and career access.",
+    "Reviewing, judging, mentorship, and community contribution across AI, engineering, and career clarity.",
 };
 
 export default function RecognitionPage() {
@@ -49,7 +49,7 @@ export default function RecognitionPage() {
         </section>
 
         <section>
-          <h2 className="mb-5 text-3xl font-black">Public Products</h2>
+          <h2 className="mb-5 text-3xl font-black">Projects</h2>
           <SimpleCard title="RoleTrails">
             <p>{roletrails.project.longDescription}</p>
           </SimpleCard>

@@ -6,7 +6,7 @@ import { projects } from "@/data/content";
 export const metadata = {
   title: "Projects | Samvid Zare",
   description:
-    "Public products, experiments, and tools around career access, AI-assisted workflows, and practical decision-making.",
+    "Projects and experiments around job discovery, career clarity, AI-assisted workflows, and practical decision-making.",
 };
 
 export default function ProjectsPage() {
@@ -15,7 +15,7 @@ export default function ProjectsPage() {
       <PageHeader
         eyebrow="Projects"
         title="Projects"
-        description="Public products and experiments I’m building around career access, AI-assisted workflows, and practical decision-making."
+        description="Projects and experiments I’m building around job discovery, career clarity, AI-assisted workflows, and practical decision-making."
       />
       <main className="section-shell grid gap-4 pb-20 md:grid-cols-2">
         {projects.map((project) => (

@@ -17,7 +17,7 @@ export default function Home() {
         <section className="section-shell grid items-center gap-10 py-14 md:py-18 lg:grid-cols-[minmax(0,720px)_minmax(320px,420px)] lg:justify-between lg:py-20">
           <div className="max-w-[720px]">
             <p className="mono mb-5 text-xs font-black uppercase text-[var(--accent)]">
-              {site.location} · Public Products · AI-Assisted Development
+              {site.location} · Product Builder · AI-Assisted Development
             </p>
             <h1 className="text-balance text-4xl font-black leading-[1.02] tracking-normal md:text-5xl lg:text-6xl">
               {site.hero}
@@ -26,10 +26,10 @@ export default function Home() {
               {site.intro}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <ButtonLink href="/projects" variant="primary">
-                View Projects
+              <ButtonLink href="/projects/roletrails" variant="primary">
+                Explore RoleTrails
               </ButtonLink>
-              <ButtonLink href="/projects/roletrails">Explore RoleTrails</ButtonLink>
+              <ButtonLink href="/projects">View Projects</ButtonLink>
               <ButtonLink href="/contact">Contact</ButtonLink>
             </div>
           </div>
@@ -45,7 +45,7 @@ export default function Home() {
             <div className="mt-6 grid gap-3 border-y border-[var(--line)] py-5 text-sm">
               <div className="flex items-center justify-between gap-4">
                 <span className="font-bold text-[var(--faint)]">Status</span>
-                <span className="font-black">{roletrails.project.status}</span>
+                <span className="font-black">Active project</span>
               </div>
               <div>
                 <span className="font-bold text-[var(--faint)]">Focus</span>
@@ -66,7 +66,7 @@ export default function Home() {
           <div className="section-shell">
             <SectionHeader
               eyebrow="Recognition"
-              title="Selected reviewing and judging work across AI, engineering, and student innovation."
+              title="Places where I’ve been trusted to review, judge, or support technical work."
             />
             <div className="grid gap-3 md:grid-cols-3">
               {recognitionItems.map((item) => (
@@ -89,10 +89,10 @@ export default function Home() {
         </section>
 
         <section className="section-shell py-16">
-          <SectionHeader
-            eyebrow="Notes"
-            title="Writing on public products, AI-assisted development, career access, and engineering judgment."
-          />
+            <SectionHeader
+              eyebrow="Notes"
+              title="Writing from building, mentoring, and learning in public."
+            />
           <div className="grid gap-4 md:grid-cols-2">
             {notes.slice(0, 2).map((note) => (
               <a
@@ -116,7 +116,7 @@ export default function Home() {
           <div className="section-shell">
             <SectionHeader
               eyebrow="Mentorship"
-              title="Practical guidance for engineers, students, and builders navigating career, projects, resumes, interviews, and AI-assisted building."
+              title="Practical guidance for engineers, students, and builders working through career moves, projects, resumes, interviews, and AI-assisted building."
             />
             <div className="mt-7">
               <ButtonLink href="/mentorship">View mentorship</ButtonLink>
@@ -127,8 +127,8 @@ export default function Home() {
         <section className="section-shell py-16">
           <div className="surface rounded-lg p-8 md:flex md:items-center md:justify-between md:gap-8">
             <p className="max-w-3xl text-2xl font-black leading-tight">
-              Open to thoughtful conversations around public products,
-              mentorship, judging, reviewing, and career access.
+              Building something around careers, AI-assisted products, judging,
+              reviewing, or mentorship?
             </p>
             <div className="mt-7 md:mt-0">
               <ButtonLink href="/contact" variant="primary">
