@@ -48,7 +48,10 @@ export default async function NoteDetailPage({
       />
       <main className="section-shell space-y-4 pb-20">
         {note.body.map((paragraph, index) => (
-          <SimpleCard title={`Note ${index + 1}`} key={paragraph}>
+          <SimpleCard
+            title={index === 0 ? "Start Here" : `Part ${index + 1}`}
+            key={paragraph}
+          >
             <p>{paragraph}</p>
           </SimpleCard>
         ))}

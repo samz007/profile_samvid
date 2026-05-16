@@ -1,4 +1,5 @@
 import { ButtonLink } from "@/components/button-link";
+import { RecognitionCard } from "@/components/recognition-card";
 import { SectionHeader } from "@/components/section-header";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -70,16 +71,7 @@ export default function Home() {
             />
             <div className="grid gap-3 md:grid-cols-3">
               {recognitionItems.map((item) => (
-                <a
-                  className="surface rounded-lg p-5 transition hover:-translate-y-1 hover:border-[var(--accent)]"
-                  href={`/recognition/${item.slug}`}
-                  key={item.slug}
-                >
-                  <p className="font-black">{item.organization}</p>
-                  <p className="mt-2 text-sm font-bold text-[var(--muted)]">
-                    {item.title}
-                  </p>
-                </a>
+                <RecognitionCard item={item} key={item.slug} />
               ))}
             </div>
             <div className="mt-7">
@@ -89,10 +81,10 @@ export default function Home() {
         </section>
 
         <section className="section-shell py-16">
-            <SectionHeader
-              eyebrow="Notes"
-              title="Writing from building, mentoring, and learning in public."
-            />
+          <SectionHeader
+            eyebrow="Notes"
+            title="Writing from building, mentoring, and learning in public."
+          />
           <div className="grid gap-4 md:grid-cols-2">
             {notes.slice(0, 2).map((note) => (
               <a

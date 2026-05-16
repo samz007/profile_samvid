@@ -16,8 +16,8 @@ export default function RecognitionPage() {
     <>
       <PageHeader
         eyebrow="Recognition"
-        title="External roles where my technical judgment has been used to review, evaluate, teach, and mentor."
-        description="This page highlights public and independently shareable roles across reviewing, judging, mentorship, and technical community contribution."
+        title="Recognition"
+        description="Places where I’ve been trusted to review, judge, or support technical work."
       />
       <main className="section-shell space-y-12 pb-20">
         <section>

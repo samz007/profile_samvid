@@ -24,6 +24,13 @@ export default function RoleTrailsProjectPage() {
         <SimpleCard title="Overview">
           <p>{roletrails.problem}</p>
         </SimpleCard>
+        <SimpleCard title="What It Helps With">
+          <ul className="grid gap-3 md:grid-cols-2">
+            {roletrails.helpsWith.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </SimpleCard>
         <SimpleCard title="What I’m Building">
           <ul className="grid gap-3 md:grid-cols-2">
             {roletrails.whatBuilding.map((item) => (
@@ -42,8 +49,8 @@ export default function RoleTrailsProjectPage() {
             {project.metrics
               .filter((item) => item !== "Searches performed")
               .map((item) => (
-              <li key={item}>{item}</li>
-            ))}
+                <li key={item}>{item}</li>
+              ))}
           </ul>
         </SimpleCard>
         <section className="surface rounded-lg p-7">

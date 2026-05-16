@@ -41,6 +41,28 @@ export type Project = {
   links: ExternalLink[];
 };
 
+export type RecognitionVerificationStatus =
+  | "public_event_page"
+  | "available_on_request"
+  | "private"
+  | "pending";
+
+export type RecognitionItem = {
+  title: string;
+  organization: string;
+  role: string;
+  year: string;
+  category: string;
+  description: string;
+  internalHref: string;
+  eventUrl?: string;
+  devpostUrl?: string;
+  verificationStatus: RecognitionVerificationStatus;
+  verificationLabel: string;
+  slug: string;
+  whyItMatters: string;
+};
+
 export const site = {
   name: "Samvid Zare",
   location: "Seattle, WA",
@@ -173,6 +195,13 @@ export const roletrails = {
   project: projects[0],
   problem:
     "Job search is fragmented across job boards, company pages, LinkedIn posts, referrals, spreadsheets, and recruiter messages. RoleTrails is built to make discovery more organized.",
+  helpsWith: [
+    "Explore roles without starting from a blank search box",
+    "Compare companies and paths in one place",
+    "Notice repeated skills, titles, and hiring patterns",
+    "Save useful leads before they disappear into tabs and spreadsheets",
+    "Turn scattered job-search activity into a clearer map",
+  ],
   whatBuilding: [
     "Role and company discovery",
     "Search and filtering",
@@ -188,67 +217,85 @@ export const roletrails = {
     "RoleTrails reflects my interest in building in public, job discovery, AI-assisted development, and useful tools for real people.",
 };
 
-export const recognitionItems = [
+export const recognitionItems: RecognitionItem[] = [
   {
     slug: "ieee-southeastcon-2026",
-    title: "Technical Reviewer",
-    organization: "IEEE SoutheastCon 2026",
-    category: "Reviewing · 2026",
-    summary:
+    title: "IEEE SoutheastCon 2026",
+    organization: "IEEE SoutheastCon",
+    role: "Technical Reviewer",
+    year: "2026",
+    category: "Reviewing",
+    description:
       "Reviewed AI and engineering research submissions, including work related to AI trust, payments, fraud detection, and engineering systems.",
-    detailTitle: "IEEE SoutheastCon 2026",
-    detailRole: "Technical Reviewer",
-    sections: {
-      role: "Technical Reviewer",
-      organization: "IEEE SoutheastCon 2026",
-      context:
-        "Reviewed AI and engineering research submissions, including topics related to AI trust, payments, fraud detection, and engineering systems.",
-      whyItMatters:
-        "Technical review is a trust role. It requires clear reading, sound judgment, and respect for both research contribution and practical engineering quality.",
-      verification: links.ieeeVerification.description,
-    },
+    internalHref: "/recognition/ieee-southeastcon-2026",
+    eventUrl: "",
+    verificationStatus: "available_on_request",
+    verificationLabel: "Certificate available upon request",
+    whyItMatters:
+      "Technical review is a trust role. It requires clear reading, sound judgment, and respect for both research contribution and practical engineering quality.",
   },
   {
     slug: "la-hacks-2026",
-    title: "Invited Judge",
-    organization: "LA Hacks 2026",
-    category: "Judging · 2026",
-    summary:
+    title: "LA Hacks 2026",
+    organization: "LA Hacks",
+    role: "Invited Judge",
+    year: "2026",
+    category: "Judging",
+    description:
       "Evaluated student-built technology projects at a major student hackathon with 1,000+ participants and approximately 300 projects.",
-    detailTitle: "LA Hacks 2026",
-    detailRole: "Invited Judge",
-    sections: {
-      role: "Invited Judge",
-      organization: "LA Hacks 2026",
-      context:
-        "Evaluated student-built technology projects at a major student hackathon with 1,000+ participants and approximately 300 projects.",
-      whyItMatters:
-        "Judging student innovation rewards clarity, usefulness, technical execution, and the ability to explain a product under real constraints.",
-      verification: links.laHacksVerification.description,
-    },
+    internalHref: "/recognition/la-hacks-2026",
+    eventUrl: "https://lahacks.com/",
+    devpostUrl: "https://la-hacks-2026.devpost.com/",
+    verificationStatus: "public_event_page",
+    verificationLabel: "Public event page",
+    whyItMatters:
+      "Judging student innovation rewards clarity, usefulness, technical execution, and the ability to explain a product under real constraints.",
   },
   {
     slug: "live-ai-ivy-plus-2026",
-    title: "Judge",
-    organization: "LIVE AI Ivy Plus 2026",
-    category: "Judging · 2026",
-    summary:
+    title: "LIVE AI Ivy Plus 2026",
+    organization: "LIVE AI",
+    role: "Judge",
+    year: "2026",
+    category: "Judging",
+    description:
       "Evaluated AI-focused projects from student and builder teams across the Ivy Plus innovation community.",
-    detailTitle: "LIVE AI Ivy Plus 2026",
-    detailRole: "Judge",
-    sections: {
-      role: "Judge",
-      organization: "LIVE AI Ivy Plus 2026",
-      context:
-        "Evaluated AI-focused projects from student and builder teams across the Ivy Plus innovation community.",
-      whyItMatters:
-        "AI project evaluation requires attention to user value, technical feasibility, responsible use, and whether the system is more than a demo.",
-      verification: links.liveAiVerification.description,
-    },
+    internalHref: "/recognition/live-ai-ivy-plus-2026",
+    eventUrl: "https://liveaiglobal.com/ivyplus/",
+    devpostUrl: "https://liveai-ivyplus-2026.devpost.com/",
+    verificationStatus: "public_event_page",
+    verificationLabel: "Public event page",
+    whyItMatters:
+      "AI project evaluation requires attention to user value, technical feasibility, responsible use, and whether the system is more than a demo.",
   },
 ];
 
 export const notes = [
+  {
+    slug: "job-search-is-a-discovery-problem",
+    title: "Job Search Is a Discovery Problem",
+    status: "Draft",
+    summary:
+      "Why finding the next career move is less about applying everywhere and more about seeing better options sooner.",
+    body: [
+      "Most job-search tools treat the problem as a transaction: find a posting, submit an application, repeat. But the harder part often happens earlier. People are trying to understand what roles exist, which companies are worth tracking, what titles map to their experience, and what paths are realistic from where they are now.",
+      "That is a discovery problem. The information is scattered across job boards, company pages, LinkedIn posts, recruiter messages, referrals, saved tabs, and private spreadsheets. The work becomes less about one perfect search query and more about building a clearer map of options.",
+      "RoleTrails is my attempt to build around that gap. I want job seekers to explore roles, companies, and career paths without constantly bouncing across ten different places. The product should help people notice patterns, compare options, and make better decisions before they apply.",
+      "The point is not to replace judgment. It is to give people a better surface for judgment: clearer options, less friction, and a stronger sense of what to do next.",
+    ],
+  },
+  {
+    slug: "roletrails-build-log",
+    title: "RoleTrails Build Log",
+    status: "Active",
+    summary:
+      "Short notes on what I’m shipping, learning, and testing while building RoleTrails in public.",
+    body: [
+      "Current focus: make the product easier to understand in the first few seconds. A job discovery tool has to communicate what it helps with before asking people to invest attention.",
+      "What I’m testing: clearer role and company browsing, tighter search/filter flows, and better ways to collect feedback from people using the product during real career moves.",
+      "What I’m learning: AI-assisted development is useful for speed, but the product still depends on taste. The important questions are what to remove, what to measure, and what makes the experience more useful for someone who is already overwhelmed.",
+    ],
+  },
   {
     slug: "building-roletrails-in-public",
     title: "Building RoleTrails in Public",

@@ -24,7 +24,7 @@ export function ButtonLink({
           : "border-[var(--line)] bg-white/7 text-white hover:bg-white/11"
       )}
       href={href}
-      rel={isExternal ? "noreferrer" : undefined}
+      rel={isExternal ? "noopener noreferrer" : undefined}
       target={isExternal ? "_blank" : undefined}
     >
       {children}
