@@ -1,12 +1,11 @@
-import Link from "next/link";
+import { ButtonLink } from "@/components/button-link";
 import { PageHeader } from "@/components/page-header";
 import { SiteFooter } from "@/components/site-footer";
 import { projects } from "@/data/content";
 
 export const metadata = {
   title: "Projects | Samvid Zare",
-  description:
-    "Projects and experiments around job discovery, career clarity, AI-assisted workflows, and practical decision-making.",
+  description: "Public products and experiments by Samvid Zare.",
 };
 
 export default function ProjectsPage() {
@@ -15,37 +14,30 @@ export default function ProjectsPage() {
       <PageHeader
         eyebrow="Projects"
         title="Projects"
-        description="Projects and experiments I’m building around job discovery, career clarity, AI-assisted workflows, and practical decision-making."
+        description="Public products and experiments."
       />
-      <main className="section-shell grid gap-4 pb-20 md:grid-cols-2">
-        {projects.map((project) => (
-          <Link
-            className="surface group rounded-lg p-7 transition hover:-translate-y-1 hover:border-[var(--accent)]"
-            href={`/projects/${project.slug}`}
-            key={project.slug}
-          >
-            <p className="mono mb-4 text-xs font-black uppercase text-[var(--accent)]">
-              {project.type} · {project.status}
-            </p>
-            <h2 className="text-3xl font-black">{project.title}</h2>
-            <p className="mt-4 leading-8 text-[var(--muted)]">
-              {project.shortDescription}
-            </p>
-            <div className="mt-6 flex flex-wrap gap-2">
-              {project.focusTags.slice(0, 3).map((tag) => (
-                <span
-                  className="rounded-full border border-[var(--line)] px-3 py-1 text-xs font-bold text-[var(--muted)]"
-                  key={tag}
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-            <span className="mt-7 inline-flex font-black text-[var(--accent)]">
-              View project →
-            </span>
-          </Link>
-        ))}
+      <main className="section-shell pb-20">
+        <div className="grid gap-4 md:grid-cols-2">
+          {projects.map((project) => (
+            <article className="surface rounded-lg p-7" key={project.slug}>
+              <p className="mono mb-4 text-xs font-black uppercase text-[var(--accent)]">
+                {project.status}
+              </p>
+              <h2 className="text-3xl font-black">{project.title}</h2>
+              <p className="mt-4 leading-8 text-[var(--muted)]">
+                {project.description}
+              </p>
+              <div className="mt-7 flex flex-wrap gap-3">
+                {project.externalUrl ? (
+                  <ButtonLink href={project.externalUrl} variant="primary">
+                    Visit product
+                  </ButtonLink>
+                ) : null}
+                <ButtonLink href={project.internalHref}>View project</ButtonLink>
+              </div>
+            </article>
+          ))}
+        </div>
       </main>
       <SiteFooter />
     </>

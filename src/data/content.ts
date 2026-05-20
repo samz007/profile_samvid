@@ -14,31 +14,14 @@ export type ProjectStatus =
   | "Paused"
   | "Archived";
 
-export type ProjectType =
-  | "Public Product"
-  | "Tool"
-  | "Experiment"
-  | "Open Source"
-  | "Writing Project"
-  | "Community Project";
-
 export type Project = {
   title: string;
   slug: string;
-  status: ProjectStatus;
-  type: ProjectType;
-  shortDescription: string;
-  longDescription: string;
-  focusTags: string[];
-  year: string;
+  description: string;
   externalUrl: string;
-  githubUrl: string;
-  notesUrl: string;
-  feedbackUrl: string;
-  isFeatured: boolean;
-  visibility: "public" | "coming_soon" | "private";
-  metrics: string[];
-  links: ExternalLink[];
+  internalHref: string;
+  status: ProjectStatus;
+  tags: string[];
 };
 
 export type RecognitionVerificationStatus =
@@ -49,15 +32,15 @@ export type RecognitionVerificationStatus =
 
 export type RecognitionItem = {
   title: string;
-  organization: string;
   role: string;
+  organization: string;
   year: string;
-  category: string;
   description: string;
   internalHref: string;
   eventUrl?: string;
   devpostUrl?: string;
   verificationStatus: RecognitionVerificationStatus;
+  category: string;
   verificationLabel: string;
   slug: string;
   whyItMatters: string;
@@ -70,10 +53,8 @@ export const site = {
   title: "Samvid Zare | RoleTrails, Job Discovery & Career Clarity",
   description:
     "Samvid Zare builds RoleTrails and writes about job discovery, career clarity, AI-assisted development, and mentorship.",
-  hero:
-    "Building tools for people navigating their next career move.",
-  intro:
-    "I’m a software engineer and product builder creating RoleTrails, a job discovery platform for exploring roles, companies, and career paths without bouncing across ten different places.",
+  hero: "Samvid Zare",
+  intro: "Building RoleTrails — a cleaner way to discover jobs and career paths.",
 };
 
 export const links: Record<string, ExternalLink> = {
@@ -140,7 +121,6 @@ export const navItems = [
   { label: "Projects", href: "/projects" },
   { label: "Recognition", href: "/recognition" },
   { label: "Notes", href: "/notes" },
-  { label: "Mentorship", href: "/mentorship" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -159,40 +139,23 @@ export const projects: Project[] = [
   {
     title: "RoleTrails",
     slug: "roletrails",
-    status: "Active",
-    type: "Public Product",
-    shortDescription:
+    description:
       "A free job discovery platform for exploring roles, companies, and career paths in one place.",
-    longDescription:
-      "RoleTrails is my public product experiment for job discovery and career clarity. The goal is simple: make the next career move less scattered and more useful for people navigating decisions.",
-    focusTags: [
+    externalUrl: links.roletrails.url,
+    internalHref: "/projects/roletrails",
+    status: "Active",
+    tags: [
       "Career Access",
       "Job Discovery",
       "AI-Assisted Development",
       "Public Product",
     ],
-    year: "2026",
-    externalUrl: links.roletrails.url,
-    githubUrl: "",
-    notesUrl: "/notes/building-roletrails-in-public",
-    feedbackUrl: "",
-    isFeatured: true,
-    visibility: "public",
-    metrics: [
-      "Users helped",
-      "Feedback quality",
-      "Returning users",
-      "Roles explored",
-      "Searches performed",
-      "Testimonials",
-      "Reported interviews or job outcomes",
-    ],
-    links: [links.roletrails],
   },
 ];
 
 export const roletrails = {
   project: projects[0],
+  type: "Public Product",
   problem:
     "Job search is fragmented across job boards, company pages, LinkedIn posts, referrals, spreadsheets, and recruiter messages. RoleTrails is built to make discovery more organized.",
   helpsWith: [
@@ -215,6 +178,14 @@ export const roletrails = {
     "RoleTrails is built with AI-assisted product development, rapid iteration, and continuous product judgment.",
   whatThisShows:
     "RoleTrails reflects my interest in building in public, job discovery, AI-assisted development, and useful tools for real people.",
+  metrics: [
+    "Users helped",
+    "Feedback quality",
+    "Returning users",
+    "Roles explored",
+    "Testimonials",
+    "Reported interviews or job outcomes",
+  ],
 };
 
 export const recognitionItems: RecognitionItem[] = [

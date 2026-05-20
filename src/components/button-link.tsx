@@ -13,6 +13,10 @@ export function ButtonLink({
   href,
   variant = "secondary",
 }: ButtonLinkProps) {
+  if (!href) {
+    return null;
+  }
+
   const isExternal = href.startsWith("http");
 
   return (

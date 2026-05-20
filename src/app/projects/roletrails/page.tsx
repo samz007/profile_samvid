@@ -16,9 +16,9 @@ export default function RoleTrailsProjectPage() {
   return (
     <>
       <PageHeader
-        eyebrow={project.type}
+        eyebrow={roletrails.type}
         title={project.title}
-        description={project.shortDescription}
+        description={project.description}
       />
       <main className="section-shell space-y-4 pb-20">
         <SimpleCard title="Overview">
@@ -46,7 +46,7 @@ export default function RoleTrailsProjectPage() {
         </SimpleCard>
         <SimpleCard title="What I’m Measuring">
           <ul className="grid gap-3 md:grid-cols-2">
-            {project.metrics
+            {roletrails.metrics
               .filter((item) => item !== "Searches performed")
               .map((item) => (
                 <li key={item}>{item}</li>
